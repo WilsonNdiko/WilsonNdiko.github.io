@@ -844,6 +844,99 @@
             }
         </style>
     </head>
+    <head class="cookies">
+    <style>
+        #cookie-banner {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            z-index: 1000;
+            display: none;
+        }
+
+        #cookie-banner p {
+            margin: 0 0 10px 0;
+        }
+
+        #cookie-banner .btn-accept,
+        #cookie-banner .btn-reject {
+            background-color: #4f6df5;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-right: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #cookie-banner .btn-reject {
+            background-color: #f54f4f;
+        }
+
+        #cookie-banner .btn-accept:hover,
+        #cookie-banner .btn-reject:hover {
+            opacity: 0.8;
+        }
+    </style>
+    
+   
+        <div id="cookie-banner">
+            <p>This website uses cookies to improve your experience. You can accept or reject them.</p>
+            <button class="btn-accept" onclick="acceptCookies()">Accept</button>
+            <button class="btn-reject" onclick="rejectCookies()">Reject</button>
+        </div>
+    
+        
+    <script>
+        function openPrivacyPolicy() {
+            document.getElementById("privacyModal").style.display = "block";
+        }
+    
+        function closePrivacyPolicy() {
+            document.getElementById("privacyModal").style.display = "none";
+        }
+    
+        // Close modal if user clicks outside of it
+        window.onclick = function(event) {
+            var modal = document.getElementById("privacyModal");
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        };
+    
+        // Cookie Consent Logic
+        function acceptCookies() {
+            localStorage.setItem("cookiesAccepted", "true");
+            document.getElementById("cookie-banner").style.display = "none";
+            enableTracking(); // Enable tracking scripts
+        }
+    
+        function rejectCookies() {
+            localStorage.setItem("cookiesAccepted", "false");
+            document.getElementById("cookie-banner").style.display = "none";
+            disableTracking(); // Disable tracking scripts
+        }
+    
+        function enableTracking() {
+            console.log("Tracking Enabled: Google Analytics or other tools can be activated here.");
+        }
+    
+        function disableTracking() {
+            console.log("Tracking Disabled: No tracking scripts will run.");
+        }
+    
+        // Show the cookie banner only if not previously accepted/rejected
+        window.onload = function() {
+            if (!localStorage.getItem("cookiesAccepted")) {
+                document.getElementById("cookie-banner").style.display = "block";
+            }
+        };
+    </script>
+    </head>
     <body class="home page-template-default page page-id-74 wp-custom-logo menu-default acme-animate right-sidebar">
         <div class="site" id="page">
             <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
@@ -879,7 +972,7 @@
                                 </li>
                                
                                 <li id="menu-item-89" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-89">
-                                    <a href="#portfolio_web_about-3" aria-current="page">About</a>
+                                    <a href="portfolio_web_about-3" aria-current="page">About</a>
                                 </li>
                             
                                 <li id="menu-item-87" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-87">
@@ -1329,9 +1422,10 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12 at-btn-wrap init-animate zoomIn">
-                                <a href="#" class="init-animate zoomIn btn btn-primary btn-reverse outline-outward banner-btn">
-                                    Hire Me Now                                    <i class="fa fa-angle-double-right"></i>
-                                </a>
+                                
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ndikowilson99@gmail.com"  class="init-animate zoomIn btn btn-primary btn-reverse outline-outward banner-btn">
+                                Hire Me Now <i class="fa fa-angle-double-right"></i>
+                            </a>
                             </div>
                         </div>
                     </div>
@@ -1606,136 +1700,51 @@
                     </div>
                 </section>
             </aside>
-            <aside id="portfolio_web_contact-3" class="widget widget_portfolio_web_contact">
-                <section id="portfolio_web_contact-3" class="at-widgets acme-contact ">
-                    <div class="contact-form-wrapper">
-                        <div class="container">
-                            <div class="row">
-                                <div class='at-widget-title-wrapper init-animate zoomIn'>
-                                    <h2 class="widget-title init-animate zoomIn">
-                                        <span>Contact Me</span>
-                                    </h2>
-                                </div>
-                                <div class="col-md-5  init-animate zoomIn">
-                                    <div class="contact-page-content">
-                                        <h3 class="entry-title">Contact Info</h3>
-                                        <div id="pl-94" class="panel-layout">
-                                            <div id="pg-94-0" class="panel-grid panel-no-style">
-                                                <div id="pgc-94-0-0" class="panel-grid-cell">
-                                                    <div id="panel-94-0-0-0" class="widget_text so-panel widget widget_custom_html panel-first-child panel-last-child" data-index="0">
-                                                        <div class="textwidget custom-html-widget">
-                                                            <div class="contact-info">
-                                                                <ul>
-                                                                    <li>
-                                                                        <strong>Email Address</strong>
-                                                                        
-                                                                            <a href="mailto:ndikowilson99@gmail.com">ndikowilson99@gmail.com</a>
-                                                                        
-                                                                    </li>
-                                                                    <li>
-                                                                        <strong>Phone Number</strong>
-                                                                        +254 701922784
-                                                                    </li>
-                                                                    <li>
-                                                                        <strong>Location</strong>
-                                                                        Nairobi, Kenya.
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-7 init-animate zoomIn">
-                                    <div class="contact-form">
-                                        <div class="wpcf7 no-js" id="wpcf7-f97-o1" lang="en-US" dir="ltr">
-                                            <div class="screen-reader-response">
-                                                <p role="status" aria-live="polite" aria-atomic="true"></p>
-                                                <ul></ul>
-                                            </div>
-                                            <form action="/portfolio-web/#wpcf7-f97-o1" method="post" class="wpcf7-form init" aria-label="Contact form" novalidate="novalidate" data-status="init">
-                                                <div style="display: none;">
-                                                    <input type="hidden" name="_wpcf7" value="97"/>
-                                                    <input type="hidden" name="_wpcf7_version" value="5.8.5"/>
-                                                    <input type="hidden" name="_wpcf7_locale" value="en_US"/>
-                                                    <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f97-o1"/>
-                                                    <input type="hidden" name="_wpcf7_container_post" value="0"/>
-                                                    <input type="hidden" name="_wpcf7_posted_data_hash" value=""/>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-6">
-                                                        <p>
-                                                            <label>
-                                                                Your Name (required)<br/>
-                                                                <span class="wpcf7-form-control-wrap" data-name="your-name">
-                                                                    <input size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" value="" type="text" name="your-name"/>
-                                                                </span>
-                                                            </label>
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <p>
-                                                            <label>
-                                                                Your Email (required)<br/>
-                                                                <span class="wpcf7-form-control-wrap" data-name="your-email">
-                                                                    <input size="40" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" aria-required="true" aria-invalid="false" value="" type="email" name="your-email"/>
-                                                                </span>
-                                                            </label>
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-md-12">
-                                                        <p>
-                                                            <label>
-                                                                Subject<br/>
-                                                                <span class="wpcf7-form-control-wrap" data-name="your-subject">
-                                                                    <input size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" value="" type="text" name="your-subject"/>
-                                                                </span>
-                                                            </label>
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-md-12">
-                                                        <p>
-                                                            <label>
-                                                                Your Message<br/>
-                                                                <span class="wpcf7-form-control-wrap" data-name="your-message">
-                                                                    <textarea cols="40" rows="5" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" name="your-message">
-                                                                    </textarea>
-                                                                </span>
-                                                            </label>
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-md-12 text-center">
-                                                        <p>
-                                                        <input class="wpcf7-form-control wpcf7-submit has-spinner" type="submit" value="Send"/>
-                                                        <script>
-                                                            document.querySelector('form.wpcf7-form').addEventListener('submit', function(event) {
-                                                                event.preventDefault();
-                                                                var name = document.getElementsByName('your-name')[0].value;
-                                                                var email = document.getElementsByName('your-email')[0].value;
-                                                                var subject = document.getElementsByName('your-subject')[0].value;
-                                                                var message = document.getElementsByName('your-message')[0].value;
-
-                                                                var mailtoLink = `mailto:ndikowilson99@gmail.com?subject=${encodeURIComponent(subject)}&body=Name: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0AMessage: ${encodeURIComponent(message)}`;
-                                                                window.location.href = mailtoLink;
-                                                            });
-                                                        </script>
-                                                            
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div class="wpcf7-response-output" aria-hidden="true"></div>
-                                            </form>
-                                        </div>
-                                    </div>
+        <aside id="portfolio_web_contact-3" class="widget widget_portfolio_web_contact">
+            <section id="portfolio_web_contact-3" class="at-widgets acme-contact">
+               
+                            <div class='at-widget-title-wrapper init-animate zoomIn'>
+                                <h2 class="widget-title init-animate zoomIn">
+                                    <span>Contact Me</span>
+                                </h2>
+                            </div>
+                            
+                           
+                            <div class='at-widget-title-wrapper init-animate zoomIn'>
+                                <div class="social-media-icons" style="font-size: 3em; display: flex; flex-wrap: wrap; justify-content: space-around;">
+                                    <a href="https://www.facebook.com/profile.php?id=100095372563553" target="_blank" style="color: #3b5998;">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="https://twitter.com/wilson6nj100" target="_blank" style="color: #1da1f2;">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/winkotech-space-45aa17349?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" style="color: #0077b5;">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/yourprofile" target="_blank" style="color: #e4405f;">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="https://www.youtube.com/@WinkoTechSpace" target="_blank" style="color: #ff0000;">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                
+                                   
+                                    <a href="https://www.tiktok.com/@wilson.smith671" target="_blank" style="color: #000000;">
+                                        <i class="fab fa-tiktok"></i>
+                                    </a>
+                                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ndikowilson99@gmail.com" target="_blank" style="color: #db4437;">
+                                        <i class="fab fa-google"></i>
+                                    </a>
+                                    <a href="https://join.skype.com/invite/EeLoH1ernOqJ" target="_blank" style="color: #00aff0;">
+                                        <i class="fab fa-skype"></i>
+                                    </a>
+                                    
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </section>
-            </aside>
+                       
+                       
+            </section>
+        </aside>
             
             <div class="clearfix"></div>
         </div>
@@ -1754,7 +1763,7 @@
                                         <ul>
                                             <li>
                                                 <strong>Email Address</strong>
-                                               <span> <a href="mailto:ndikowilson99@gmail.com">ndikowilson99@gmail.com</a></span>
+                                               <span> <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ndikowilson99@gmail.com">ndikowilson99@gmail.com</a></span>
                                             </li>
                                             <li>
                                                 <strong>Phone Number</strong>
@@ -1781,7 +1790,7 @@
                                                     </h3>
                                                     <p class="at-subtitle">"I am a passionate web and UI/UX designer focused on creating user-centric designs and seamless digital experiences. With a strong foundation in web development, I strive to deliver visually engaging and responsive solutions for all kinds of platforms." </p>
                                                 </div>
-                                                <a href="" class="init-animate zoomIn btn btn-primary btn-reverse">Hire Me !!                                </a>
+                                                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ndikowilson99@gmail.com"  class="init-animate zoomIn btn btn-primary btn-reverse">Hire Me !!                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -1829,7 +1838,7 @@
                             <div class="footer-copyright text-left">
                                 <p class="at-display-inline-block">&copy;All right reserved                                    </p>
                                 <div class="site-info at-display-inline-block">
-                                 <a href="index.html" rel="designer">WilsonNdiko</a>
+                                 <a>WilsonNdiko</a>
                                 </div>
                                 <!-- .site-info -->
                             </div>
@@ -1838,16 +1847,16 @@
                             <div class='at-first-level-nav text-right'>
                                 <ul id="menu-footer-menu" class="menu">
                                     <li id="menu-item-124" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-124">
-                                        <a href="#">Privacy Policy</a>
+                                        <a href="privacypolicy.html" target="_blank">Privacy Policy</a>
                                     </li>
                                     <li id="menu-item-125" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-125">
-                                        <a href="#">Terms &#038;Conditions</a>
+                                        <a href="terms-and-conditions.html" target="_blank">Terms &#038;Conditions</a>
                                     </li>
                                     <li id="menu-item-126" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-126">
-                                        <a href="#">Site Map</a>
+                                        <a href="sitemap.html" target="_blank">Site Map</a>
                                     </li>
                                     <li id="menu-item-127" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-127">
-                                        <a href="#">Support</a>
+                                        <a href="support.html" target="_blank">Support</a>
                                     </li>
                                 </ul>
                             </div>
