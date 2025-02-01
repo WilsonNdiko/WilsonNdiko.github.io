@@ -964,29 +964,45 @@
                                 <span></span>
                             </span>
                         </a>
-                        <div class="search-woo"></div>
-                        <div class="main-navigation navbar-collapse collapse">
-                            <ul id="primary-menu" class="nav navbar-nav  acme-normal-page">
-                                <li id="menu-item-91" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-74 current_page_item menu-item-91">
-                                    <a href="index.html" aria-current="page">Home</a>
-                                </li>
-                               
-                                <li id="menu-item-89" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-89">
-                                    <a href="portfolio_web_about-3" aria-current="page">About</a>
-                                </li>
-                            
-                                <li id="menu-item-87" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-87">
-                                    <a href="#portfolio_web_gallery-3" aria-current="page">Portfolio</a>
-                                </li>
-                                <li id="menu-item-90" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-90">
-                                    <a href="index.html" aria-current="page">Blog</a>
-                                </li>
-                                <li id="menu-item-88" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-88">
-                                    <a href="index.html" aria-current="page">Contact</a> 
-                                </li>
-                            <li id="menu-item-92" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-92"></li>
-                            </ul>
-                        </div>
+                        <!-- ...existing code... -->
+<div class="search-woo"></div>
+<div id="navbar-collapse" class="main-navigation navbar-collapse collapse">
+    <ul id="primary-menu" class="nav navbar-nav  acme-normal-page">
+        <li id="menu-item-91" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-74 current_page_item menu-item-91">
+            <a href="#page" aria-current="page">Home</a>
+        </li>
+        <li id="menu-item-89" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-89">
+            <a href="#portfolio_web_about-3" aria-current="page">About</a>
+        </li>
+        <li id="menu-item-87" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-87">
+            <a href="#portfolio_web_gallery-3" aria-current="page">Portfolio</a>
+        </li>
+        <li id="menu-item-90" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-90">
+            <a href="#portfolio_web_posts_col-3" aria-current="page">Blog</a>
+        </li>
+        <li id="menu-item-88" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-88">
+            <a href="#portfolio_web_contact-3" aria-current="page">Contact</a> 
+        </li>
+        <li id="menu-item-92" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-92"></li>
+    </ul>
+</div>
+<!-- ...existing code... -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var navbarCollapse = document.getElementById('navbar-collapse');
+        var links = navbarCollapse.querySelectorAll('a');
+
+        links.forEach(function(link) {
+            link.addEventListener('click', function() {
+                if (navbarCollapse.classList.contains('in')) {
+                    navbarCollapse.classList.remove('in');
+                }
+            });
+        });
+    });
+</script>
+<!-- ...existing code... -->
+                       
                         <!--/.nav-collapse -->
                     </div>
                     <!--.at-beside-navbar-header-->
@@ -1006,7 +1022,7 @@
                                     View Portfolio
                                     <i class="fa fa-angle-right"></i>
                                 </a>
-                                <a href="path/to/your/resume.pdf" class="init-animate fadeInDown btn btn-primary outline-outward banner-btn" download>
+                                <a href="Wilson_CV.docx" class="init-animate fadeInDown btn btn-primary outline-outward banner-btn" download>
                                     Download Resume
                                     <i class="fa fa-angle-right"></i>
                                 </a>
@@ -1020,7 +1036,57 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width:50px;height:50px;">
                     </a>
                 </div>
-                <!--acme slick carousel-->
+                 
+            <div id="floating-nav" style="position:fixed;top:40%;left:0;transform:translateY(-50%);z-index:1000;display:none;">
+                <ul style="list-style:none;padding:0;margin:0;">
+                    <li style="margin-bottom:10px;">
+                        <a href="#page" style="display:block;padding:10px;background-color:#4f6df5;color:white;text-align:center;border-radius:0 5px 5px 0;">
+                            <i class="fas fa-home"></i>
+                        </a>
+                    </li>
+                    <li style="margin-bottom:10px;">
+                        <a href="#portfolio_web_about-3" style="display:block;padding:10px;background-color:#4f6df5;color:white;text-align:center;border-radius:0 5px 5px 0;">
+                            <i class="fas fa-user"></i>
+                        </a>
+                    </li>
+                    <li style="margin-bottom:10px;">
+                        <a href="#portfolio_web_gallery-3" style="display:block;padding:10px;background-color:#4f6df5;color:white;text-align:center;border-radius:0 5px 5px 0;">
+                            <i class="fas fa-briefcase"></i>
+                        </a>
+                    </li>
+                    <li style="margin-bottom:10px;">
+                        <a href="#portfolio_web_posts_col-3" style="display:block;padding:10px;background-color:#4f6df5;color:white;text-align:center;border-radius:0 5px 5px 0;">
+                            <i class="fas fa-blog"></i>
+                        </a>
+                    </li>
+                    <li style="margin-bottom:10px;">
+                        <a href="#portfolio_web_testimonial-3" style="display:block;padding:10px;background-color:#4f6df5;color:white;text-align:center;border-radius:0 5px 5px 0;">
+                            <i class="fas fa-comments"></i>
+                        </a>
+                    </li>
+                    <li style="margin-bottom:10px;">
+                        <a href="#portfolio_web_contact-3" style="display:block;padding:10px;background-color:#4f6df5;color:white;text-align:center;border-radius:0 5px 5px 0;">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    function checkScreenSize() {
+                        if (window.innerWidth >= 992) {
+                            document.getElementById('floating-nav').style.display = 'block';
+                        } else {
+                            document.getElementById('floating-nav').style.display = 'none';
+                        }
+                    }
+
+                    checkScreenSize();
+                    window.addEventListener('resize', checkScreenSize);
+                });
+            </script>
+               
             </div>
             <!--.image slider wrapper-->
             <aside id="portfolio_web_about-3" class="widget widget_portfolio_web_about">
@@ -1042,7 +1108,7 @@
                                 <p class='init-animate zoomIn'>I am dedicated to continuously learning and improving my craft, ensuring that I stay up to date with the latest design trends and web technologies. Whether it's developing responsive designs or optimizing user interfaces, I strive to deliver solutions that are both functional and visually appealing.
 
                                 </p>
-                                <a href="#" class="init-animate zoomIn btn btn-primary btn-reverse">Download Resume                      </a>
+                                <a href="Wilson_CV.docx" class="init-animate zoomIn btn btn-primary btn-reverse">Download Resume                      </a>
                             </div>
                         </div>
                     </div>
@@ -1632,74 +1698,76 @@
                 </section>
             </aside>
             <div class='clearfix'></div>
-            <aside id="portfolio_web_testimonial-3" class="widget widget_portfolio_web_testimonial">
-                <section id="portfolio_web_testimonial-3" class="at-widgets acme-testimonials at-parallax" style="background-image:url(https://demo.acmethemes.com/portfolio-web/wp-content/uploads/2019/01/computer-1245714_1920.jpg);background-repeat:no-repeat;background-size:cover;background-attachment:fixed;background-position: center;">
-                    <div class="container">
-                        <div class='at-widget-title-wrapper init-animate zoomIn'>
-                            <h2 class="widget-title init-animate zoomIn">
-                                <span>Testimonials</span>
-                            </h2>
-                        </div>
-                        <div class="row featured-entries-col featured-entries-logo ">
-                            <div class="single-list col-sm-4 col-md-4">
-                                <div class="testimonial-item init-animate zoomIn">
-                                    <div class="testimonial-content">
-                                        <div class="testimonial-author">
-                                            <div class="testimonial-image">
-                                                <img width="150" height="150" src="paul.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async"/>
-                                            </div>
-                                            <h3 class="testimonial-author-name">
-                                                <a href="https://kungu-paul.github.io/" class="all-link">Paul Kung'u</a>
-                                                <span class="designation">CEO, Kenya E-commerce Movement.</span>
-                                            </h3>
-                                        </div>
-                                        <div class="testimonial-details">
-                                            <p>"Wilson Ndiko is a skilled and creative developer. Their attention to detail and user-friendly designs greatly improved our platform’s experience."</p>
-                                        </div>
-                                    </div>
+          
+<aside id="portfolio_web_testimonial-3" class="widget widget_portfolio_web_testimonial">
+    <section id="portfolio_web_testimonial-3" class="at-widgets acme-testimonials at-parallax classic-testimonials" style="background-image:url(https://demo.acmethemes.com/portfolio-web/wp-content/uploads/2019/01/computer-1245714_1920.jpg);background-repeat:no-repeat;background-size:cover;background-attachment:fixed;background-position: center;">
+        <div class="container">
+            <div class='at-widget-title-wrapper init-animate zoomIn'>
+                <h2 class="widget-title init-animate zoomIn">
+                    <span>Testimonials</span>
+                </h2>
+            </div>
+            <div class="row featured-entries-col featured-entries-logo ">
+                <div class="single-list col-sm-4 col-md-4">
+                    <div class="testimonial-item init-animate zoomIn">
+                        <div class="testimonial-content">
+                            <div class="testimonial-author">
+                                <div class="testimonial-image">
+                                    <img width="150" height="150" src="paul.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async"/>
                                 </div>
+                                <h3 class="testimonial-author-name">
+                                    <a href="https://kungu-paul.github.io/" class="all-link">Paul Kung'u</a>
+                                    <span class="designation">CEO, Kenya E-commerce Movement.</span>
+                                </h3>
                             </div>
-                            <div class="single-list col-sm-4 col-md-4">
-                                <div class="testimonial-item init-animate zoomIn">
-                                    <div class="testimonial-content">
-                                        <div class="testimonial-author">
-                                            <div class="testimonial-image">
-                                                <img width="150" height="150" src="paul.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async"/>
-                                            </div>
-                                            <h3 class="testimonial-author-name">
-                                                <a href="#" class="all-link">Julius Mburu</a>
-                                                <span class="designation">UI/UX Designer, Global Web Devs.</span>
-                                            </h3>
-                                        </div>
-                                        <div class="testimonial-details">
-                                            <p>"Working with Wilson was an absolute pleasure. Their design skills and deep understanding of UI/UX principles helped create an engaging user experience."</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single-list col-sm-4 col-md-4">
-                                <div class="testimonial-item init-animate zoomIn">
-                                    <div class="testimonial-content">
-                                        <div class="testimonial-author">
-                                            <div class="testimonial-image">
-                                                <img width="150" height="150" src="paul.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async"/>
-                                            </div>
-                                            <h3 class="testimonial-author-name">
-                                                <a href="#" class="all-link">Nicole Imogen</a>
-                                                <span class="designation">Graphics Designer, FinTech Graphics.</span>
-                                            </h3>
-                                        </div>
-                                        <div class="testimonial-details">
-                                            <p>"I had the pleasure of collaborating with Wilson, and his creativity and design skills are top-notch. He delivered work that aligned perfectly with our brand's vision."</p>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="testimonial-details">
+                                <p>"Wilson Ndiko is a skilled and creative developer. Their attention to detail and user-friendly designs greatly improved our platform’s experience."</p>
                             </div>
                         </div>
-                        <!--row-->
                     </div>
-                </section>
-            </aside>
+                </div>
+                <div class="single-list col-sm-4 col-md-4">
+                    <div class="testimonial-item init-animate zoomIn">
+                        <div class="testimonial-content">
+                            <div class="testimonial-author">
+                                <div class="testimonial-image">
+                                    <img width="150" height="150" src="paul.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async"/>
+                                </div>
+                                <h3 class="testimonial-author-name">
+                                    <a href="#" class="all-link">Julius Mburu</a>
+                                    <span class="designation">UI/UX Designer, Global Web Devs.</span>
+                                </h3>
+                            </div>
+                            <div class="testimonial-details">
+                                <p>"Working with Wilson was an absolute pleasure. Their design skills and deep understanding of UI/UX principles helped create an engaging user experience."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-list col-sm-4 col-md-4">
+                    <div class="testimonial-item init-animate zoomIn">
+                        <div class="testimonial-content">
+                            <div class="testimonial-author">
+                                <div class="testimonial-image">
+                                    <img width="150" height="150" src="paul.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async"/>
+                                </div>
+                                <h3 class="testimonial-author-name">
+                                    <a href="#" class="all-link">Nicole Imogen</a>
+                                    <span class="designation">Graphics Designer, FinTech Graphics.</span>
+                                </h3>
+                            </div>
+                            <div class="testimonial-details">
+                                <p>"I had the pleasure of collaborating with Wilson, and his creativity and design skills are top-notch. He delivered work that aligned perfectly with our brand's vision."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--row-->
+        </div>
+    </section>
+</aside>
+<!-- ...existing code... -->
         <aside id="portfolio_web_contact-3" class="widget widget_portfolio_web_contact">
             <section id="portfolio_web_contact-3" class="at-widgets acme-contact">
                
