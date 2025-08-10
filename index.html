@@ -1,2036 +1,538 @@
-<html lang="en-US">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        <link rel="profile" href="//gmpg.org/xfn/11">
-        <title>Wilson Ndiko</title>
-        <meta name='robots' content='max-image-preview:large'/>
-        <link rel='dns-prefetch' href='//fonts.googleapis.com'/>
-        <link rel="alternate" type="application/rss+xml" title="Portfolio Web &raquo; Feed" href="https://demo.acmethemes.com/portfolio-web/feed/"/>
-        <link rel="alternate" type="application/rss+xml" title="Portfolio Web &raquo; Comments Feed" href="https://demo.acmethemes.com/portfolio-web/comments/feed/"/>
-        <script type="text/javascript">
-            /* <![CDATA[ */
-            window._wpemojiSettings = {
-                "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/",
-                "ext": ".png",
-                "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/",
-                "svgExt": ".svg",
-                "source": {
-                    "concatemoji": "https:\/\/demo.acmethemes.com\/portfolio-web\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.4.5"
-                }
-            };
-            /*! This file is auto-generated */
-            !function(i, n) {
-                var o, s, e;
-                function c(e) {
-                    try {
-                        var t = {
-                            supportTests: e,
-                            timestamp: (new Date).valueOf()
-                        };
-                        sessionStorage.setItem(o, JSON.stringify(t))
-                    } catch (e) {}
-                }
-                function p(e, t, n) {
-                    e.clearRect(0, 0, e.canvas.width, e.canvas.height),
-                    e.fillText(t, 0, 0);
-                    var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data)
-                      , r = (e.clearRect(0, 0, e.canvas.width, e.canvas.height),
-                    e.fillText(n, 0, 0),
-                    new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data));
-                    return t.every(function(e, t) {
-                        return e === r[t]
-                    })
-                }
-                function u(e, t, n) {
-                    switch (t) {
-                    case "flag":
-                        return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\uddfa\ud83c\uddf3", "\ud83c\uddfa\u200b\ud83c\uddf3") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");
-                    case "emoji":
-                        return !n(e, "\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff", "\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")
-                    }
-                    return !1
-                }
-                function f(e, t, n) {
-                    var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300,150) : i.createElement("canvas")
-                      , a = r.getContext("2d", {
-                        willReadFrequently: !0
-                    })
-                      , o = (a.textBaseline = "top",
-                    a.font = "600 32px Arial",
-                    {});
-                    return e.forEach(function(e) {
-                        o[e] = t(a, e, n)
-                    }),
-                    o
-                }
-                function t(e) {
-                    var t = i.createElement("script");
-                    t.src = e,
-                    t.defer = !0,
-                    i.head.appendChild(t)
-                }
-                "undefined" != typeof Promise && (o = "wpEmojiSettingsSupports",
-                s = ["flag", "emoji"],
-                n.supports = {
-                    everything: !0,
-                    everythingExceptFlag: !0
-                },
-                e = new Promise(function(e) {
-                    i.addEventListener("DOMContentLoaded", e, {
-                        once: !0
-                    })
-                }
-                ),
-                new Promise(function(t) {
-                    var n = function() {
-                        try {
-                            var e = JSON.parse(sessionStorage.getItem(o));
-                            if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests)
-                                return e.supportTests
-                        } catch (e) {}
-                        return null
-                    }();
-                    if (!n) {
-                        if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob)
-                            try {
-                                var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(), p.toString()].join(",") + "));"
-                                  , r = new Blob([e],{
-                                    type: "text/javascript"
-                                })
-                                  , a = new Worker(URL.createObjectURL(r),{
-                                    name: "wpTestEmojiSupports"
-                                });
-                                return void (a.onmessage = function(e) {
-                                    c(n = e.data),
-                                    a.terminate(),
-                                    t(n)
-                                }
-                                )
-                            } catch (e) {}
-                        c(n = f(s, u, p))
-                    }
-                    t(n)
-                }
-                ).then(function(e) {
-                    for (var t in e)
-                        n.supports[t] = e[t],
-                        n.supports.everything = n.supports.everything && n.supports[t],
-                        "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]);
-                    n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag,
-                    n.DOMReady = !1,
-                    n.readyCallback = function() {
-                        n.DOMReady = !0
-                    }
-                }).then(function() {
-                    return e
-                }).then(function() {
-                    var e;
-                    n.supports.everything || (n.readyCallback(),
-                    (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji),
-                    t(e.wpemoji)))
-                }))
-            }((window,
-            document), window._wpemojiSettings);
-            /* ]]> */
-        </script>
-        <style id='wp-emoji-styles-inline-css' type='text/css'>
-            img.wp-smiley, img.emoji {
-                display: inline !important;
-                border: none !important;
-                box-shadow: none !important;
-                height: 1em !important;
-                width: 1em !important;
-                margin: 0 0.07em !important;
-                vertical-align: -0.1em !important;
-                background: none !important;
-                padding: 0 !important;
-            }
-        </style>
-        <link rel='stylesheet' id='wp-block-library-css' href='https://demo.acmethemes.com/portfolio-web/wp-includes/css/dist/block-library/style.min.css?ver=6.4.5' type='text/css' media='all'/>
-        <style id='wp-block-library-theme-inline-css' type='text/css'>
-            .wp-block-audio figcaption {
-                color: #555;
-                font-size: 13px;
-                text-align: center
-            }
-
-            .is-dark-theme .wp-block-audio figcaption {
-                color: hsla(0,0%,100%,.65)
-            }
-
-            .wp-block-audio {
-                margin: 0 0 1em
-            }
-
-            .wp-block-code {
-                border: 1px solid #ccc;
-                border-radius: 4px;
-                font-family: Menlo,Consolas,monaco,monospace;
-                padding: .8em 1em
-            }
-
-            .wp-block-embed figcaption {
-                color: #555;
-                font-size: 13px;
-                text-align: center
-            }
-
-            .is-dark-theme .wp-block-embed figcaption {
-                color: hsla(0,0%,100%,.65)
-            }
-
-            .wp-block-embed {
-                margin: 0 0 1em
-            }
-
-            .blocks-gallery-caption {
-                color: #555;
-                font-size: 13px;
-                text-align: center
-            }
-
-            .is-dark-theme .blocks-gallery-caption {
-                color: hsla(0,0%,100%,.65)
-            }
-
-            .wp-block-image figcaption {
-                color: #555;
-                font-size: 13px;
-                text-align: center
-            }
-
-            .is-dark-theme .wp-block-image figcaption {
-                color: hsla(0,0%,100%,.65)
-            }
-
-            .wp-block-image {
-                margin: 0 0 1em
-            }
-
-            .wp-block-pullquote {
-                border-bottom: 4px solid;
-                border-top: 4px solid;
-                color: currentColor;
-                margin-bottom: 1.75em
-            }
-
-            .wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation {
-                color: currentColor;
-                font-size: .8125em;
-                font-style: normal;
-                text-transform: uppercase
-            }
-
-            .wp-block-quote {
-                border-left: .25em solid;
-                margin: 0 0 1.75em;
-                padding-left: 1em
-            }
-
-            .wp-block-quote cite,.wp-block-quote footer {
-                color: currentColor;
-                font-size: .8125em;
-                font-style: normal;
-                position: relative
-            }
-
-            .wp-block-quote.has-text-align-right {
-                border-left: none;
-                border-right: .25em solid;
-                padding-left: 0;
-                padding-right: 1em
-            }
-
-            .wp-block-quote.has-text-align-center {
-                border: none;
-                padding-left: 0
-            }
-
-            .wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain {
-                border: none
-            }
-
-            .wp-block-search .wp-block-search__label {
-                font-weight: 700
-            }
-
-            .wp-block-search__button {
-                border: 1px solid #ccc;
-                padding: .375em .625em
-            }
-
-            :where(.wp-block-group.has-background) {
-                padding: 1.25em 2.375em
-            }
-
-            .wp-block-separator.has-css-opacity {
-                opacity: .4
-            }
-
-            .wp-block-separator {
-                border: none;
-                border-bottom: 2px solid;
-                margin-left: auto;
-                margin-right: auto
-            }
-
-            .wp-block-separator.has-alpha-channel-opacity {
-                opacity: 1
-            }
-
-            .wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
-                width: 100px
-            }
-
-            .wp-block-separator.has-background:not(.is-style-dots) {
-                border-bottom: none;
-                height: 1px
-            }
-
-            .wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots) {
-                height: 2px
-            }
-
-            .wp-block-table {
-                margin: 0 0 1em
-            }
-
-            .wp-block-table td,.wp-block-table th {
-                word-break: normal
-            }
-
-            .wp-block-table figcaption {
-                color: #555;
-                font-size: 13px;
-                text-align: center
-            }
-
-            .is-dark-theme .wp-block-table figcaption {
-                color: hsla(0,0%,100%,.65)
-            }
-
-            .wp-block-video figcaption {
-                color: #555;
-                font-size: 13px;
-                text-align: center
-            }
-
-            .is-dark-theme .wp-block-video figcaption {
-                color: hsla(0,0%,100%,.65)
-            }
-
-            .wp-block-video {
-                margin: 0 0 1em
-            }
-
-            .wp-block-template-part.has-background {
-                margin-bottom: 0;
-                margin-top: 0;
-                padding: 1.25em 2.375em
-            }
-        </style>
-        <style id='classic-theme-styles-inline-css' type='text/css'>
-            /*! This file is auto-generated */
-            .wp-block-button__link {
-                color: #fff;
-                background-color: #32373c;
-                border-radius: 9999px;
-                box-shadow: none;
-                text-decoration: none;
-                padding: calc(.667em + 2px) calc(1.333em + 2px);
-                font-size: 1.125em
-            }
-
-            .wp-block-file__button {
-                background: #32373c;
-                color: #fff;
-                text-decoration: none
-            }
-        </style>
-        <style id='global-styles-inline-css' type='text/css'>
-            body {
-                --wp--preset--color--black: #000000;
-                --wp--preset--color--cyan-bluish-gray: #abb8c3;
-                --wp--preset--color--white: #ffffff;
-                --wp--preset--color--pale-pink: #f78da7;
-                --wp--preset--color--vivid-red: #cf2e2e;
-                --wp--preset--color--luminous-vivid-orange: #ff6900;
-                --wp--preset--color--luminous-vivid-amber: #fcb900;
-                --wp--preset--color--light-green-cyan: #7bdcb5;
-                --wp--preset--color--vivid-green-cyan: #00d084;
-                --wp--preset--color--pale-cyan-blue: #8ed1fc;
-                --wp--preset--color--vivid-cyan-blue: #0693e3;
-                --wp--preset--color--vivid-purple: #9b51e0;
-                --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);
-                --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);
-                --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);
-                --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);
-                --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);
-                --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);
-                --wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);
-                --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);
-                --wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);
-                --wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);
-                --wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);
-                --wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);
-                --wp--preset--font-size--small: 13px;
-                --wp--preset--font-size--medium: 20px;
-                --wp--preset--font-size--large: 36px;
-                --wp--preset--font-size--x-large: 42px;
-                --wp--preset--spacing--20: 0.44rem;
-                --wp--preset--spacing--30: 0.67rem;
-                --wp--preset--spacing--40: 1rem;
-                --wp--preset--spacing--50: 1.5rem;
-                --wp--preset--spacing--60: 2.25rem;
-                --wp--preset--spacing--70: 3.38rem;
-                --wp--preset--spacing--80: 5.06rem;
-                --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
-                --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
-                --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
-                --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
-                --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
-            }
-
-            :where(.is-layout-flex) {
-                gap: 0.5em;
-            }
-
-            :where(.is-layout-grid) {
-                gap: 0.5em;
-            }
-
-            body .is-layout-flow > .alignleft {
-                float: left;
-                margin-inline-start: 0;margin-inline-end: 2em;}
-
-            body .is-layout-flow > .alignright {
-                float: right;
-                margin-inline-start: 2em;margin-inline-end: 0;}
-
-            body .is-layout-flow > .aligncenter {
-                margin-left: auto !important;
-                margin-right: auto !important;
-            }
-
-            body .is-layout-constrained > .alignleft {
-                float: left;
-                margin-inline-start: 0;margin-inline-end: 2em;}
-
-            body .is-layout-constrained > .alignright {
-                float: right;
-                margin-inline-start: 2em;margin-inline-end: 0;}
-
-            body .is-layout-constrained > .aligncenter {
-                margin-left: auto !important;
-                margin-right: auto !important;
-            }
-
-            body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
-                max-width: var(--wp--style--global--content-size);
-                margin-left: auto !important;
-                margin-right: auto !important;
-            }
-
-            body .is-layout-constrained > .alignwide {
-                max-width: var(--wp--style--global--wide-size);
-            }
-
-            body .is-layout-flex {
-                display: flex;
-            }
-
-            body .is-layout-flex {
-                flex-wrap: wrap;
-                align-items: center;
-            }
-
-            body .is-layout-flex > * {
-                margin: 0;
-            }
-
-            body .is-layout-grid {
-                display: grid;
-            }
-
-            body .is-layout-grid > * {
-                margin: 0;
-            }
-
-            :where(.wp-block-columns.is-layout-flex) {
-                gap: 2em;
-            }
-
-            :where(.wp-block-columns.is-layout-grid) {
-                gap: 2em;
-            }
-
-            :where(.wp-block-post-template.is-layout-flex) {
-                gap: 1.25em;
-            }
-
-            :where(.wp-block-post-template.is-layout-grid) {
-                gap: 1.25em;
-            }
-
-            .has-black-color {
-                color: var(--wp--preset--color--black) !important;
-            }
-
-            .has-cyan-bluish-gray-color {
-                color: var(--wp--preset--color--cyan-bluish-gray) !important;
-            }
-
-            .has-white-color {
-                color: var(--wp--preset--color--white) !important;
-            }
-
-            .has-pale-pink-color {
-                color: var(--wp--preset--color--pale-pink) !important;
-            }
-
-            .has-vivid-red-color {
-                color: var(--wp--preset--color--vivid-red) !important;
-            }
-
-            .has-luminous-vivid-orange-color {
-                color: var(--wp--preset--color--luminous-vivid-orange) !important;
-            }
-
-            .has-luminous-vivid-amber-color {
-                color: var(--wp--preset--color--luminous-vivid-amber) !important;
-            }
-
-            .has-light-green-cyan-color {
-                color: var(--wp--preset--color--light-green-cyan) !important;
-            }
-
-            .has-vivid-green-cyan-color {
-                color: var(--wp--preset--color--vivid-green-cyan) !important;
-            }
-
-            .has-pale-cyan-blue-color {
-                color: var(--wp--preset--color--pale-cyan-blue) !important;
-            }
-
-            .has-vivid-cyan-blue-color {
-                color: var(--wp--preset--color--vivid-cyan-blue) !important;
-            }
-
-            .has-vivid-purple-color {
-                color: var(--wp--preset--color--vivid-purple) !important;
-            }
-
-            .has-black-background-color {
-                background-color: var(--wp--preset--color--black) !important;
-            }
-
-            .has-cyan-bluish-gray-background-color {
-                background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
-            }
-
-            .has-white-background-color {
-                background-color: var(--wp--preset--color--white) !important;
-            }
-
-            .has-pale-pink-background-color {
-                background-color: var(--wp--preset--color--pale-pink) !important;
-            }
-
-            .has-vivid-red-background-color {
-                background-color: var(--wp--preset--color--vivid-red) !important;
-            }
-
-            .has-luminous-vivid-orange-background-color {
-                background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
-            }
-
-            .has-luminous-vivid-amber-background-color {
-                background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
-            }
-
-            .has-light-green-cyan-background-color {
-                background-color: var(--wp--preset--color--light-green-cyan) !important;
-            }
-
-            .has-vivid-green-cyan-background-color {
-                background-color: var(--wp--preset--color--vivid-green-cyan) !important;
-            }
-
-            .has-pale-cyan-blue-background-color {
-                background-color: var(--wp--preset--color--pale-cyan-blue) !important;
-            }
-
-            .has-vivid-cyan-blue-background-color {
-                background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
-            }
-
-            .has-vivid-purple-background-color {
-                background-color: var(--wp--preset--color--vivid-purple) !important;
-            }
-
-            .has-black-border-color {
-                border-color: var(--wp--preset--color--black) !important;
-            }
-
-            .has-cyan-bluish-gray-border-color {
-                border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
-            }
-
-            .has-white-border-color {
-                border-color: var(--wp--preset--color--white) !important;
-            }
-
-            .has-pale-pink-border-color {
-                border-color: var(--wp--preset--color--pale-pink) !important;
-            }
-
-            .has-vivid-red-border-color {
-                border-color: var(--wp--preset--color--vivid-red) !important;
-            }
-
-            .has-luminous-vivid-orange-border-color {
-                border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
-            }
-
-            .has-luminous-vivid-amber-border-color {
-                border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
-            }
-
-            .has-light-green-cyan-border-color {
-                border-color: var(--wp--preset--color--light-green-cyan) !important;
-            }
-
-            .has-vivid-green-cyan-border-color {
-                border-color: var(--wp--preset--color--vivid-green-cyan) !important;
-            }
-
-            .has-pale-cyan-blue-border-color {
-                border-color: var(--wp--preset--color--pale-cyan-blue) !important;
-            }
-
-            .has-vivid-cyan-blue-border-color {
-                border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
-            }
-
-            .has-vivid-purple-border-color {
-                border-color: var(--wp--preset--color--vivid-purple) !important;
-            }
-
-            .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
-                background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
-            }
-
-            .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
-                background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
-            }
-
-            .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
-                background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
-            }
-
-            .has-luminous-vivid-orange-to-vivid-red-gradient-background {
-                background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
-            }
-
-            .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
-                background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
-            }
-
-            .has-cool-to-warm-spectrum-gradient-background {
-                background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
-            }
-
-            .has-blush-light-purple-gradient-background {
-                background: var(--wp--preset--gradient--blush-light-purple) !important;
-            }
-
-            .has-blush-bordeaux-gradient-background {
-                background: var(--wp--preset--gradient--blush-bordeaux) !important;
-            }
-
-            .has-luminous-dusk-gradient-background {
-                background: var(--wp--preset--gradient--luminous-dusk) !important;
-            }
-
-            .has-pale-ocean-gradient-background {
-                background: var(--wp--preset--gradient--pale-ocean) !important;
-            }
-
-            .has-electric-grass-gradient-background {
-                background: var(--wp--preset--gradient--electric-grass) !important;
-            }
-
-            .has-midnight-gradient-background {
-                background: var(--wp--preset--gradient--midnight) !important;
-            }
-
-            .has-small-font-size {
-                font-size: var(--wp--preset--font-size--small) !important;
-            }
-
-            .has-medium-font-size {
-                font-size: var(--wp--preset--font-size--medium) !important;
-            }
-
-            .has-large-font-size {
-                font-size: var(--wp--preset--font-size--large) !important;
-            }
-
-            .has-x-large-font-size {
-                font-size: var(--wp--preset--font-size--x-large) !important;
-            }
-
-            .wp-block-navigation a:where(:not(.wp-element-button)) {
-                color: inherit;
-            }
-
-            :where(.wp-block-post-template.is-layout-flex) {
-                gap: 1.25em;
-            }
-
-            :where(.wp-block-post-template.is-layout-grid) {
-                gap: 1.25em;
-            }
-
-            :where(.wp-block-columns.is-layout-flex) {
-                gap: 2em;
-            }
-
-            :where(.wp-block-columns.is-layout-grid) {
-                gap: 2em;
-            }
-
-            .wp-block-pullquote {
-                font-size: 1.5em;
-                line-height: 1.6;
-            }
-            
-        </style>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <link rel='stylesheet' id='contact-form-7-css' href='https://demo.acmethemes.com/portfolio-web/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8.5' type='text/css' media='all'/>
-        <link rel='stylesheet' id='portfolio-web-googleapis-css' href='//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Work+Sans:100,200,300,400,500,600,700,800,900' type='text/css' media='all'/>
-        <link rel='stylesheet' id='bootstrap-css' href='https://demo.acmethemes.com/portfolio-web/wp-content/themes/portfolio-web/assets/library/bootstrap/css/bootstrap.min.css?ver=3.3.6' type='text/css' media='all'/>
-        <link rel='stylesheet' id='font-awesome-css' href='https://demo.acmethemes.com/portfolio-web/wp-content/themes/portfolio-web/assets/library/Font-Awesome/css/font-awesome.min.css?ver=4.5.0' type='text/css' media='all'/>
-        <link rel='stylesheet' id='slick-css' href='https://demo.acmethemes.com/portfolio-web/wp-content/themes/portfolio-web/assets/library/slick/slick.css?ver=1.3.3' type='text/css' media='all'/>
-        <link rel='stylesheet' id='magnific-popup-css' href='https://demo.acmethemes.com/portfolio-web/wp-content/themes/portfolio-web/assets/library/magnific-popup/magnific-popup.css?ver=1.1.0' type='text/css' media='all'/>
-        <link rel='stylesheet' id='portfolio-web-style-css' href='https://demo.acmethemes.com/portfolio-web/wp-content/themes/portfolio-web/style.css?ver=6.4.5' type='text/css' media='all'/>
-        <style id='portfolio-web-style-inline-css' type='text/css'>
-            .top-header {
-                background-color: #4f6df5;
-            }
-
-            .site-footer {
-                background-color: #1b1b1b;
-            }
-
-            .copy-right {
-                background-color: #2d2d2d;
-            }
-
-            .site-title:hover, .site-title a:hover, .site-title a:focus, .at-social .socials li a, .primary-color, #portfolio-web-breadcrumbs a:hover, #portfolio-web-breadcrumbs a:focus, .woocommerce .star-rating, .woocommerce ul.products li.product .star-rating, .woocommerce p.stars a, .woocommerce ul.products li.product .price, .woocommerce ul.products li.product .price ins .amount, .woocommerce div.product .woocommerce-tabs ul.tabs li a, .woocommerce-message::before, .acme-contact .contact-page-content ul li strong, .acme-contact .contact-page-content ul li strong, .main-navigation .acme-normal-page .current_page_item > a, .main-navigation .acme-normal-page .current-menu-item > a, .at-sticky .main-navigation .acme-normal-page .current_page_item > a, .at-sticky .main-navigation .acme-normal-page .current-menu-item > a, .main-navigation .acme-normal-page .current_page_item li a:hover, .main-navigation .acme-normal-page .current-menu-item li a:hover, .main-navigation .acme-normal-page ul li a:hover, .at-sticky .main-navigation .acme-normal-page .current_page_item li a:hover, .at-sticky .main-navigation .acme-normal-page .current-menu-item li a:hover, .at-sticky .main-navigation .acme-normal-page ul li a:hover, .main-navigation .active a, .main-navigation .navbar-nav > li a:hover, .woocommerce a.button.add_to_cart_button:hover, .woocommerce a.added_to_cart:hover, .woocommerce a.button.product_type_grouped:hover, .woocommerce a.button.product_type_external:hover, .woocommerce .cart .button:hover, .woocommerce .cart input.button:hover, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover, .woocommerce .woocommerce-info .button:hover, .woocommerce .widget_shopping_cart_content .buttons a.button:hover, i.slick-arrow:hover, .main-navigation li li a:focus, .main-navigation .acme-normal-page .current_page_item li a:focus, .main-navigation .acme-normal-page .current-menu-item li a:focus, .main-navigation .acme-normal-page ul li a:focus, .at-sticky .main-navigation .acme-normal-page .current_page_item li a:focus, .at-sticky .main-navigation .acme-normal-page .current-menu-item li a:focus, .at-sticky .main-navigation .acme-normal-page ul li a:focus, .main-navigation .navbar-nav > li a:focus, .woocommerce a.button.add_to_cart_button:focus, .woocommerce a.added_to_cart:focus, .woocommerce a.button.product_type_grouped:focus, .woocommerce a.button.product_type_external:focus, .woocommerce .cart .button:focus, .woocommerce .cart input.button:focus, .woocommerce #respond input#submit.alt:focus, .woocommerce a.button.alt:focus, .woocommerce button.button.alt:focus, .woocommerce input.button.alt:focus, .woocommerce .woocommerce-info .button:focus, .woocommerce .widget_shopping_cart_content .buttons a.button:focus, i.slick-arrow:focus, .main-navigation li li a:focus {
-                color: #4f6df5;
-            }
-
-            .main-navigation .current_page_ancestor > a:before, .comment-form .form-submit input, .btn-primary, .wpcf7-form input.wpcf7-submit, .wpcf7-form input.wpcf7-submit:hover, .wpcf7-form input.wpcf7-submit:focus, .sm-up-container, .btn-primary.btn-reverse:before, #at-shortcode-bootstrap-modal .modal-header, .primary-bg, .navigation.pagination .nav-links .page-numbers.current, .navigation.pagination .nav-links a.page-numbers:hover, .navigation.pagination .nav-links a.page-numbers:focus, .woocommerce .product .onsale, .woocommerce a.button.add_to_cart_button, .woocommerce a.added_to_cart, .woocommerce a.button.product_type_grouped, .woocommerce a.button.product_type_external, .woocommerce .single-product #respond input#submit.alt, .woocommerce .single-product a.button.alt, .woocommerce .single-product button.button.alt, .woocommerce .single-product input.button.alt, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce .widget_shopping_cart_content .buttons a.button, .woocommerce div.product .woocommerce-tabs ul.tabs li:hover, .woocommerce div.product .woocommerce-tabs ul.tabs li.active, .woocommerce .cart .button, .woocommerce .cart input.button, .woocommerce input.button:disabled, .woocommerce input.button:disabled[disabled], .woocommerce input.button:disabled:hover, .woocommerce input.button:disabled:focus, .woocommerce input.button:disabled[disabled]:hover, .woocommerce input.button:disabled[disabled]:focus, .woocommerce nav.woocommerce-pagination ul li a:focus, .woocommerce nav.woocommerce-pagination ul li a:hover, .woocommerce nav.woocommerce-pagination ul li span.current, .woocommerce a.button.wc-forward, .woocommerce .widget_price_filter .ui-slider .ui-slider-range, .woocommerce .widget_price_filter .ui-slider .ui-slider-handle, .navbar .cart-wrap .acme-cart-views a span, .acme-gallery .read-more, .woocommerce a.button.alt.disabled, .woocommerce a.button.alt.disabled:hover, .woocommerce a.button.alt:disabled, .woocommerce a.button.alt:disabled:focus, .woocommerce a.button.alt:disabled[disabled], .woocommerce a.button.alt:disabled[disabled]:hover, .woocommerce a.button.alt:disabled[disabled]:focus, .woocommerce button.button.alt.disabled, .woocommerce-MyAccount-navigation ul > li> a:hover, .woocommerce-MyAccount-navigation ul > li> a:focus, .woocommerce-MyAccount-navigation ul > li.is-active > a, .featured-button.btn, .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:focus {
-                background-color: #4f6df5;
-                color: #fff;
-                border: 1px solid #4f6df5;
-            }
-
-            .woocommerce .cart .button, .woocommerce .cart input.button, .woocommerce a.button.add_to_cart_button, .woocommerce a.added_to_cart, .woocommerce a.button.product_type_grouped, .woocommerce a.button.product_type_external, .woocommerce .cart .button, .woocommerce .cart input.button .woocommerce .single-product #respond input#submit.alt, .woocommerce .single-product a.button.alt, .woocommerce .single-product button.button.alt, .woocommerce .single-product input.button.alt, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce .widget_shopping_cart_content .buttons a.button, .woocommerce div.product .woocommerce-tabs ul.tabs:before {
-                border: 1px solid #4f6df5;
-            }
-
-            .blog article.sticky {
-                border-bottom: 2px solid #4f6df5;
-            }
-
-            a, .posted-on a, .single-item .fa, .author.vcard a, .comments-link a, .edit-link a, .tags-links a, .byline a, .nav-links a, .widget li a, .entry-meta i.fa, .entry-footer i.fa, .counter-item i, .testimonial-content::after {
-                color: #748BF7;
-            }
-
-            a:hover, a:active, a:focus, .posted-on a:hover, .single-item .fa:hover, .author.vcard a:hover, .comments-link a:hover, .edit-link a:hover, .tags-links a:hover, .byline a:hover, .nav-links a:hover, .widget li a:hover, .posted-on a:focus, .single-item .fa:focus, .author.vcard a:focus, .comments-link a:focus, .edit-link a:focus, .tags-links a:focus, .byline a:focus, .nav-links a:focus, .widget li a:focus, .close-menu:hover, .close-menu:focus {
-                color: #3f5dcf;
-            }
-
-            .btn-reverse, .image-slider-wrapper .slider-content .btn-reverse:hover, .at-widgets.at-parallax .btn-reverse:hover, .image-slider-wrapper .slider-content .btn-reverse:focus, .at-widgets.at-parallax .btn-reverse:focus, .at-price h2 {
-                color: #4f6df5;
-            }
-
-            .btn-reverse:hover, .image-slider-wrapper .slider-content .btn-reverse:hover, .at-widgets.at-parallax .btn-reverse:hover, .btn-reverse:focus, .image-slider-wrapper .slider-content .btn-reverse:focus, .at-widgets.at-parallax .btn-reverse:focus {
-                background: #4f6df5;
-                color: #fff;
-                border-color: #4f6df5;
-            }
-
-            .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
-                background: #4f6df5;
-                color: #fff;
-            }
-
-            .team-img-box:before {
-                -webkit-box-shadow: 0 -106px 92px -35px #4f6df5 inset;
-                box-shadow: 0 -106px 92px -35px #4f6df5 inset;
-            }
-
-            .at-pricing-box:hover .at-pricing-img-box::before {
-                -webkit-box-shadow: 0 -130px 92px -35px #4f6df5 inset;
-                box-shadow: 0 -130px 92px -35px #4f6df5 inset;
-            }
-
-            .at-pricing-box:focus-within .at-pricing-img-box::before {
-                -webkit-box-shadow: 0 -130px 92px -35px #4f6df5 inset;
-                box-shadow: 0 -130px 92px -35px #4f6df5 inset;
-            }
-
-            .filters.button-group button:hover, .filters.button-group button:focus {
-                background: #4f6df5;
-                color: #fff;
-            }
-
-            .acme-services.normal .column .single-item:hover, .acme-services.normal .column .single-item:hover:after, .acme-services.normal .column .single-item:hover:before {
-                border-color: #4f6df5;
-            }
-
-            .acme-services.normal .column .single-item:focus-within, .acme-services.normal .column .single-item:focus-within:after, .acme-services.normal .column .single-item:focus-within:before {
-                border-color: #4f6df5;
-            }
-
-            .contact-form div.wpforms-container-full .wpforms-form input[type='submit'], .contact-form div.wpforms-container-full .wpforms-form button[type='submit'], .contact-form div.wpforms-container-full .wpforms-form .wpforms-page-button {
-                background-color: #4f6df5;
-                color: #fff;
-                border: 1px solid #4f6df5;
-            }
-
-            .acme-accordions .accordion-title:hover, .acme-accordions .accordion-title:focus, .acme-accordions .accordion-title.active, .acme-accordions .accordion-title.active a {
-                border-color: #4f6df5;
-                background: #4f6df5;
-            }
-
-            .scroll-box span:after, .sm-up-container, .at-pricing-img-box .at-price, .at-timeline-block.current .at-timeline-img, .navbar-toggle:hover span.menu-icon span, .at-action-wrapper .slick-arrow {
-                background: #748BF7;
-            }
-
-            .navbar-toggle:focus-within span.menu-icon span {
-                background: #748BF7;
-            }
-
-            .sm-up-container:hover, .at-action-wrapper .slick-arrow:hover, .sm-up-container:focus, .at-action-wrapper .slick-arrow:focus {
-                background: #3f5dcf;
-            }
-        </style>
-        <link rel='stylesheet' id='portfolio-web-block-front-styles-css' href='https://demo.acmethemes.com/portfolio-web/wp-content/themes/portfolio-web/acmethemes/gutenberg/gutenberg-front.css?ver=1.0' type='text/css' media='all'/>
-        <script type="text/javascript" src="https://demo.acmethemes.com/portfolio-web/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
-        <script type="text/javascript" src="https://demo.acmethemes.com/portfolio-web/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
-        <!--[if lt IE 9]>
-<script type="text/javascript" src="https://demo.acmethemes.com/portfolio-web/wp-content/themes/portfolio-web/assets/library/html5shiv/html5shiv.min.js?ver=3.7.3" id="html5-js"></script>
-<![endif]-->
-        <!--[if lt IE 9]>
-<script type="text/javascript" src="https://demo.acmethemes.com/portfolio-web/wp-content/themes/portfolio-web/assets/library/respond/respond.min.js?ver=1.1.2" id="respond-js"></script>
-<![endif]-->
-        <link rel="https://api.w.org/" href="https://demo.acmethemes.com/portfolio-web/wp-json/"/>
-        <link rel="alternate" type="application/json" href="https://demo.acmethemes.com/portfolio-web/wp-json/wp/v2/pages/74"/>
-        <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://demo.acmethemes.com/portfolio-web/xmlrpc.php?rsd"/>
-        <meta name="generator" content="WordPress 6.4.5"/>
-        <link rel="canonical" href="https://demo.acmethemes.com/portfolio-web/"/>
-        <link rel='shortlink' href='https://demo.acmethemes.com/portfolio-web/'/>
-        <link rel="alternate" type="application/json+oembed" href="https://demo.acmethemes.com/portfolio-web/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdemo.acmethemes.com%2Fportfolio-web%2F"/>
-        <link rel="alternate" type="text/xml+oembed" href="https://demo.acmethemes.com/portfolio-web/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdemo.acmethemes.com%2Fportfolio-web%2F&#038;format=xml"/>
-        <style type="text/css">
-            .recentcomments a {
-                display: inline !important;
-                padding: 0 !important;
-                margin: 0 !important;
-            }
-        </style>
-    </head>
-    <head class="cookies">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wilson The Dev- Developer Portfolio</title>
     <style>
-        #cookie-banner {
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             position: fixed;
-            bottom: 20px;
-            left: 20px;
-            background-color: rgba(0, 0, 0, 0.8);
-            color: white;
-            padding: 15px;
-            border-radius: 5px;
+            width: 100%;
+            top: 0;
             z-index: 1000;
-            display: none;
         }
 
-        #cookie-banner p {
-            margin: 0 0 10px 0;
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
         }
 
-        #cookie-banner .btn-accept,
-        #cookie-banner .btn-reject {
-            background-color: #4f6df5;
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #3498db;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            border: none;
-            padding: 10px 20px;
-            margin-right: 10px;
+            padding: 120px 0 80px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            animation: fadeInUp 1s ease;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            animation: fadeInUp 1s ease 0.2s both;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
             border-radius: 5px;
-            cursor: pointer;
+            font-weight: 500;
+            transition: background 0.3s;
+            animation: fadeInUp 1s ease 0.4s both;
         }
 
-        #cookie-banner .btn-reject {
-            background-color: #f54f4f;
+        .btn:hover {
+            background: #2980b9;
+            transform: translateY(-2px);
         }
 
-        #cookie-banner .btn-accept:hover,
-        #cookie-banner .btn-reject:hover {
-            opacity: 0.8;
+        /* Sections */
+        section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #2c3e50;
+        }
+
+        /* About Section */
+        .about {
+            background: white;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-img {
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            background: #ddd;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            color: #666;
+        }
+
+        .about-text p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        /* Skills Section */
+        .skills {
+            background: #f8f9fa;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .skill-category {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .skill-category:hover {
+            transform: translateY(-5px);
+        }
+
+        .skill-category h3 {
+            color: #3498db;
+            margin-bottom: 1rem;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tag {
+            background: #ecf0f1;
+            color: #2c3e50;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Projects Section */
+        .projects {
+            background: white;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .project-card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-img {
+            height: 200px;
+            background: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+        }
+
+        .project-content {
+            padding: 1.5rem;
+        }
+
+        .project-content h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .project-tech {
+            display: flex;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+
+        .tech-tag {
+            background: #3498db;
+            color: white;
+            padding: 0.2rem 0.6rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .project-links a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .project-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+        }
+
+        .contact-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        .contact-links a:hover {
+            color: #3498db;
+        }
+
+        /* Footer */
+        footer {
+            background: #1a252f;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .contact-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
         }
     </style>
-    
-   
-        <div id="cookie-banner">
-            <p>This website uses cookies to improve your experience. You can accept or reject them.</p>
-            <button class="btn-accept" onclick="acceptCookies()">Accept</button>
-            <button class="btn-reject" onclick="rejectCookies()">Reject</button>
-        </div>
-    
-        
-    <script>
-        function openPrivacyPolicy() {
-            document.getElementById("privacyModal").style.display = "block";
-        }
-    
-        function closePrivacyPolicy() {
-            document.getElementById("privacyModal").style.display = "none";
-        }
-    
-        // Close modal if user clicks outside of it
-        window.onclick = function(event) {
-            var modal = document.getElementById("privacyModal");
-            if (event.target === modal) {
-                modal.style.display = "none";
-            }
-        };
-    
-        // Cookie Consent Logic
-        function acceptCookies() {
-            localStorage.setItem("cookiesAccepted", "true");
-            document.getElementById("cookie-banner").style.display = "none";
-            enableTracking(); // Enable tracking scripts
-        }
-    
-        function rejectCookies() {
-            localStorage.setItem("cookiesAccepted", "false");
-            document.getElementById("cookie-banner").style.display = "none";
-            disableTracking(); // Disable tracking scripts
-        }
-    
-        function enableTracking() {
-            console.log("Tracking Enabled: Google Analytics or other tools can be activated here.");
-        }
-    
-        function disableTracking() {
-            console.log("Tracking Disabled: No tracking scripts will run.");
-        }
-    
-        // Show the cookie banner only if not previously accepted/rejected
-        window.onload = function() {
-            if (!localStorage.getItem("cookiesAccepted")) {
-                document.getElementById("cookie-banner").style.display = "block";
-            }
-        };
-    </script>
-    </head>
-    <body class="home page-template-default page page-id-74 wp-custom-logo menu-default acme-animate right-sidebar">
-        <div class="site" id="page">
-            <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
-            <div class="navbar at-navbar " id="navbar" role="navigation">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <span class="menu-icon">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </span>
-                            <!-- <i class="fa fa-bars"></i> -->
-                        </button>
-                        <span class="logo">
-                            <a href="#" class="custom-logo-link" rel="home" aria-current="page">
-                                <img width="229" height="50" src="newlogo-removebg-preview.png" class="custom-logo" alt="my logo" decoding="async"/>
-                            </a>
-                        </span>
-                    </div>
-                    <div class="at-beside-navbar-header">
-                        <a href="#" class="close-menu">
-                            <span class="menu-icon">
-                                <span></span>
-                                <span></span>
-                            </span>
-                        </a>
-                        <!-- ...existing code... -->
-<div class="search-woo"></div>
-<div id="navbar-collapse" class="main-navigation navbar-collapse collapse">
-    <ul id="primary-menu" class="nav navbar-nav  acme-normal-page">
-        <li id="menu-item-91" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-74 current_page_item menu-item-91">
-            <a href="#page" aria-current="page">Home</a>
-        </li>
-        <li id="menu-item-89" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-89">
-            <a href="#portfolio_web_about-3" aria-current="page">About</a>
-        </li>
-        <li id="menu-item-87" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-87">
-            <a href="#portfolio_web_gallery-3" aria-current="page">Portfolio</a>
-        </li>
-        <li id="menu-item-90" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-90">
-            <a href="#portfolio_web_posts_col-3" aria-current="page">Blog</a>
-        </li>
-        <li id="menu-item-88" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-88">
-            <a href="#portfolio_web_contact-3" aria-current="page">Contact</a> 
-        </li>
-        <li id="menu-item-92" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-92"></li>
-    </ul>
-</div>
-<!-- ...existing code... -->
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var navbarCollapse = document.getElementById('navbar-collapse');
-        var links = navbarCollapse.querySelectorAll('a');
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">Wilson Ndiko</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        links.forEach(function(link) {
-            link.addEventListener('click', function() {
-                if (navbarCollapse.classList.contains('in')) {
-                    navbarCollapse.classList.remove('in');
+    <section class="hero">
+        <div class="container">
+            <h1>Full Stack Developer</h1>
+            <p>Crafting digital experiences with clean code and innovative solutions</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-img">
+                    <div class="profile-img">Your Photo Here</div>
+                </div>
+                <div class="about-text">
+                    <p>Hello! I'm a passionate full stack developer with [X] years of experience creating web applications and digital solutions. I love turning complex problems into simple, beautiful, and intuitive designs.</p>
+                    <p>When I'm not coding, you can find me exploring new technologies, contributing to open source projects, or enjoying a good cup of coffee while planning my next project.</p>
+                    <p>I believe in writing clean, maintainable code and creating user experiences that make a difference.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">React</span>
+                        <span class="tag">Vue.js</span>
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">Sass</span>
+                        <span class="tag">TypeScript</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Express</span>
+                        <span class="tag">Django</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">Redis</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & DevOps</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Git</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">AWS</span>
+                        <span class="tag">Linux</span>
+                        <span class="tag">CI/CD</span>
+                        <span class="tag">Webpack</span>
+                        <span class="tag">Jest</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img">Project Screenshot</div>
+                    <div class="project-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p>A full-featured e-commerce solution with user authentication, payment processing, and admin dashboard.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Stripe</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#">Live Demo</a>
+                            <a href="#">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">Project Screenshot</div>
+                    <div class="project-content">
+                        <h3>Task Management App</h3>
+                        <p>A collaborative task management application with real-time updates and team functionality.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">Socket.io</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#">Live Demo</a>
+                            <a href="#">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">Project Screenshot</div>
+                    <div class="project-content">
+                        <h3>Weather Dashboard</h3>
+                        <p>A responsive weather application with location-based forecasts and interactive maps.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">API Integration</span>
+                            <span class="tech-tag">Chart.js</span>
+                            <span class="tech-tag">CSS3</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#">Live Demo</a>
+                            <a href="#">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Work Together</h2>
+            <div class="contact-content">
+                <p>I'm always interested in hearing about new opportunities and exciting projects. Let's create something amazing together!</p>
+                <div class="contact-links">
+                    <a href="mailto:your.email@example.com">Email</a>
+                    <a href="https://linkedin.com/in/yourprofile">LinkedIn</a>
+                    <a href="https://github.com/yourusername">GitHub</a>
+                    <a href="tel:+1234567890">Phone</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
                 }
             });
         });
-    });
-</script>
-<!-- ...existing code... -->
-                       
-                        <!--/.nav-collapse -->
-                    </div>
-                    <!--.at-beside-navbar-header-->
-                </div>
-            </div>
-            <div class="image-slider-wrapper home-fullscreen full-screen-bg">
-                <div class="featured-slider">
-                    <div class="item" style="background-image:url(portfolio_man2_41920x800\ \(1\)\ \(1\).png);background-repeat:no-repeat;background-size:cover;background-position:center;">
-                        <div class="slider-content text-left">
-                            <div class="container">
-                                <div class="banner-title init-animate fadeInDown">Wilson Ndiko</div>
-                                <div class="image-slider-caption init-animate fadeInDown">
-                                    <p>Software Developer</p>
-                                </div>
-                                
-                                <a href="#portfolio_web_gallery-3" class="init-animate fadeInDown btn btn-primary btn-reverse outline-outward banner-btn">
-                                    View Portfolio
-                                    <i class="fa fa-angle-right"></i>
-                                </a>
-                                <a href="Wilson_CV.docx" class="init-animate fadeInDown btn btn-primary outline-outward banner-btn" download>
-                                    Download Resume
-                                    <i class="fa fa-angle-right"></i>
-                                </a>
-                            
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="whatsapp-float" style="position:fixed;bottom:70px;left:40px;z-index:1000;">
-                    <a href="https://wa.me/254701922784" target="_blank">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width:50px;height:50px;">
-                    </a>
-                </div>
-                 
-           <!-- ...existing code... -->
 
-<!-- ...existing code... -->
-
-          
-               
-            </div>
-            <!--.image slider wrapper-->
-            <aside id="portfolio_web_about-3" class="widget widget_portfolio_web_about">
-                <section id="portfolio_web_about-3" class="at-widgets at-feature-about">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-6 init-animate zoomIn">
-                                <div class="at-feature-about-img">
-                                    <img src="background1-removebg-preview.png" alt="About Me" class="img-responsive"/>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class='at-widget-title-wrapper init-animate zoomIn'>
-                                    <h2 class="widget-title init-animate zoomIn">
-                                        <span>About Me</span>
-                                    </h2>
-                                    <p class="at-subtitle">Hello, I’m a UI/UX Designer &amp; Frontend Developer from Nairobi, Kenya. I’m currently pursuing a Bachelor’s degree in Information Technology at Mama Ngina University College.</p>
-                                </div>
-                                <p class='init-animate zoomIn'>I am dedicated to continuously learning and improving my craft, ensuring that I stay up to date with the latest design trends and web technologies. Whether it's developing responsive designs or optimizing user interfaces, I strive to deliver solutions that are both functional and visually appealing.
-
-                                </p>
-                                <a href="Wilson_CV.docx" class="init-animate zoomIn btn btn-primary btn-reverse">Download Resume                      </a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </aside>
-            <aside id="portfolio_web_skills-3" class="widget widget_portfolio_web_skills">
-                <section id="portfolio_web_skills-3" class="at-widgets at-skills   at-parallax" style="background-image:url(https://demo.acmethemes.com/portfolio-web/wp-content/uploads/2019/01/laptop-1209008.jpg);background-repeat:no-repeat;background-size:cover;background-attachment:fixed;background-position: center;">
-                    <div class="container">
-                        <div class='at-widget-title-wrapper init-animate zoomIn'>
-                            <h2 class="widget-title init-animate zoomIn">
-                                <span>My Skills</span>
-                            </h2>
-                        </div>
-                        <div class="row featured-entries-col featured-entries-logo">
-                            <div class="single-list col-sm-3 col-md-3 init-animate zoomIn">
-                                <span class="chart" data-percent="90">
-                                    <span class="percent">90</span>
-                                </span>
-                                <h3 class="">
-                                    <a href="#" class="all-link">Graphics Designer</a>
-                                </h3>
-                                <div class="skills-content"></div>
-                            </div>
-                            <div class="single-list col-sm-3 col-md-3 init-animate zoomIn">
-                                <span class="chart" data-percent="89">
-                                    <span class="percent">89</span>
-                                </span>
-                                <h3 class="">
-                                    <a href="#" class="all-link">Cloud Computing</a>
-                                </h3>
-                                <div class="skills-content"></div>
-                            </div>
-                            <div class="single-list col-sm-3 col-md-3 init-animate zoomIn">
-                                <span class="chart" data-percent="95">
-                                    <span class="percent">95</span>
-                                </span>
-                                <h3 class="">
-                                    <a href="#" class="all-link">Web Design</a>
-                                </h3>
-                                <div class="skills-content"></div>
-                            </div>
-                            <div class="single-list col-sm-3 col-md-3 init-animate zoomIn">
-                                <span class="chart" data-percent="97">
-                                    <span class="percent">97</span>
-                                </span>
-                                <h3 class="">
-                                    <a href="#" class="all-link">Networking</a>
-                                </h3>
-                                <div class="skills-content"></div>
-                            </div>
-                        </div>
-                        <!--row-->
-                    </div>
-                    <!--cointainer-->
-                </section>
-            </aside>
-            <aside id="portfolio_web_service-3" class="widget widget_portfolio_web_service">
-                <section id="portfolio_web_service-3" class="at-widgets acme-services  feature at-no-parallax" style="">
-                    <div class="container">
-                        <div class='at-widget-title-wrapper init-animate zoomIn'>
-                            <h2 class="widget-title init-animate zoomIn">
-                                <span>My Services</span>
-                            </h2>
-                        </div>
-                        <div class="row featured-entries-col featured-entries-logo">
-                            <div class="single-list col-sm-4 col-md-4 column">
-                                <div class="single-item init-animate zoomIn">
-                                    <div class="icon clearfix">
-                                        <a href="#" class="all-link">
-                                            <i class="fa fa-paint-brush"></i>
-                                        </a>
-                                    </div>
-                                    <h3 class="title">
-                                        <a href="#" class="all-link">Web Design</a>
-                                    </h3>
-                                    <div class="content">
-                                        <div class="details">
-                                            <p>I specialize in creating visually stunning and user-friendly websites. By focusing on clean design, responsiveness, and user experience, I ensure that each site not only looks great but also functions seamlessly across all devices.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single-list col-sm-4 col-md-4 column">
-                                <div class="single-item init-animate zoomIn">
-                                    <div class="icon clearfix">
-                                        <a href="#" class="all-link">
-                                            <i class="fa fa-leaf"></i>
-                                        </a>
-                                    </div>
-                                    <h3 class="title">
-                                        <a href="#" class="all-link">UI/UX Design</a>
-                                    </h3>
-                                    <div class="content">
-                                        <div class="details">
-                                            <p>I focus on designing intuitive user interfaces and crafting seamless user experiences. By understanding user needs and behaviors, I create designs that are both functional and engaging, ensuring the best possible interaction with the product.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single-list col-sm-4 col-md-4 column">
-                                <div class="single-item init-animate zoomIn">
-                                    <div class="icon clearfix">
-                                        <a href="#" class="all-link">
-                                            <i class="fa fa-laptop"></i>
-                                        </a>
-                                    </div>
-                                    <h3 class="title">
-                                        <a href="#" class="all-link">Frontend</a>
-                                    </h3>
-                                    <div class="content">
-                                        <div class="details">
-                                            <p>I specialize in frontend development, bringing designs to life with HTML, CSS, and JavaScript. My focus is on creating responsive, interactive, and visually appealing websites that ensure a smooth user experience across all platforms.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--row-->
-                    </div>
-                    <!--cointainer-->
-                </section>
-            </aside>
-            <aside id="portfolio_web_timeline-3" class="widget widget_portfolio_web_timeline">
-                <section id="portfolio_web_timeline-3" class="at-widgets at-timelime tow at-gray-bg">
-                    <div class="container">
-                        <div class='at-widget-title-wrapper init-animate zoomIn'>
-                            <h2 class="widget-title init-animate zoomIn">
-                                <span>My Experience</span>
-                            </h2>
-                        </div>
-                        <div class="at-container at-timeline-section">
-                            <div class="at-timeline-block current at-odd init-animate zoomIn">
-                                <div class="at-timeline-img"></div>
-                                <!-- at-timeline-img -->
-                                <div class="at-timeline-content">
-                                    <h3>Web Programmer                                            </h3>
-                                    <div class="timeline-content">
-                                        <p>
-                                            As a passionate web developer, I specialize in creating dynamic and visually appealing websites that are not only user-friendly but also optimized for performance.
-                                            <span class="more-text" style="display:none;">
-                                                With a strong foundation in HTML, CSS, JavaScript, and various frameworks like Bootstrap and Tailwind, I strive to craft seamless experiences for users across different devices. My goal is to help businesses and individuals transform their digital presence with responsive, high-quality websites that meet their unique needs.
-                                            </span>
-                                            <a href="#" class="see-more-link" onclick="toggleSeeMore(this); return false;">See more</a>
-                                        </p>
-                                    </div>
-                                    <script>
-                                    function toggleSeeMore(link) {
-                                        var moreText = link.previousElementSibling;
-                                        if (moreText.style.display === "none") {
-                                            moreText.style.display = "inline";
-                                            link.textContent = "See less";
-                                        } else {
-                                            moreText.style.display = "none";
-                                            link.textContent = "See more";
-                                        }
-                                    }
-                                    </script>
-                                    <!--.timeline-content-->
-                                    <span class="at-date">
-                                        <strong>WordPress</strong>
-                                        2020-Present                                            
-                                    </span>
-                                    <!--.at-date-->
-                                </div>
-                                <!-- at-timeline-content -->
-                            </div>
-                            <!--.at-timeline-block-->
-                            <div class="at-timeline-block  at-even init-animate zoomIn">
-                                <div class="at-timeline-img"></div>
-                                <!-- at-timeline-img -->
-                                <div class="at-timeline-content">
-                                    <h3>Creative Director                                            </h3>
-                                    <div class="timeline-content">
-                                        <p>
-                                            As a passionate web developer, I specialize in creating dynamic and visually appealing websites that are not only user-friendly but also optimized for performance.
-                                            <span class="more-text" style="display:none;">
-                                                With a strong foundation in HTML, CSS, JavaScript, and various frameworks like Bootstrap and Tailwind, I strive to craft seamless experiences for users across different devices. My goal is to help businesses and individuals transform their digital presence with responsive, high-quality websites that meet their unique needs.
-                                            </span>
-                                            <a href="#" class="see-more-link" onclick="toggleSeeMore(this); return false;">See more</a>
-                                        </p>
-                                    </div>
-                                    <script>
-                                    function toggleSeeMore(link) {
-                                        var moreText = link.previousElementSibling;
-                                        if (moreText.style.display === "none") {
-                                            moreText.style.display = "inline";
-                                            link.textContent = "See less";
-                                        } else {
-                                            moreText.style.display = "none";
-                                            link.textContent = "See more";
-                                        }
-                                    }
-                                    </script>
-                                    <!--.timeline-content-->
-                                    <span class="at-date">
-                                        <strong>Canva</strong>
-                                        2021-2023                                            
-                                    </span>
-                                    <!--.at-date-->
-                                </div>
-                                <!-- at-timeline-content -->
-                            </div>
-                            <!--.at-timeline-block-->
-                            <div class="at-timeline-block  at-odd init-animate zoomIn">
-                                <div class="at-timeline-img"></div>
-                                <!-- at-timeline-img -->
-                                <div class="at-timeline-content">
-                                    <h3>Graphics Designer                                            </h3>
-                                   <div class="timeline-content">
-                                        <p>
-                                            As a passionate web developer, I specialize in creating dynamic and visually appealing websites that are not only user-friendly but also optimized for performance.
-                                            <span class="more-text" style="display:none;">
-                                                With a strong foundation in HTML, CSS, JavaScript, and various frameworks like Bootstrap and Tailwind, I strive to craft seamless experiences for users across different devices. My goal is to help businesses and individuals transform their digital presence with responsive, high-quality websites that meet their unique needs.
-                                            </span>
-                                            <a href="#" class="see-more-link" onclick="toggleSeeMore(this); return false;">See more</a>
-                                        </p>
-                                    </div>
-                                    <script>
-                                    function toggleSeeMore(link) {
-                                        var moreText = link.previousElementSibling;
-                                        if (moreText.style.display === "none") {
-                                            moreText.style.display = "inline";
-                                            link.textContent = "See less";
-                                        } else {
-                                            moreText.style.display = "none";
-                                            link.textContent = "See more";
-                                        }
-                                    }
-                                    </script>
-                                    <!--.timeline-content-->
-                                    <span class="at-date">
-                                        <strong>Adobe</strong>
-                                        2020-Present                                            
-                                    </span>
-                                    <!--.at-date-->
-                                </div>
-                                <!-- at-timeline-content -->
-                            </div>
-                            <!--.at-timeline-block-->
-                        </div>
-                        <!--.at-timeline-section-->
-                    </div>
-                    <!--.container-->
-                </section>
-                <!--.at-timelime-->
-            </aside>
-            <aside id="portfolio_web_gallery-3" class="widget widget_portfolio_web_gallery">
-                <section id="portfolio_web_gallery-3" class="at-widgets acme-gallery">
-                    <div class="full-width-container">
-                        <div class='at-widget-title-wrapper'>
-                            <h2 class="widget-title init-animate zoomIn">
-                                <span>Portfolio</span>
-                            </h2>
-                        </div>
-                        <div class="row fullwidth-row">
-                            <div class="at-gallery-item  col-sm-3 col-md-3">
-                                <div class="gallery-inner-item init-animate zoomIn">
-                                    <div class="at-bottom-lower">
-                                        <h3>
-                                            <a href="#" class="all-link">Mockup Design</a>
-                                        </h3>
-                                        <a class="image-gallery-widget" href="https://demo.acmethemes.com/portfolio-web/wp-content/uploads/2019/01/pexels-photo-1037992.jpeg">
-                                            <i class="fa fa-search gallery-button primary-bg"></i>
-                                        </a>
-                                    </div>
-                                    <div class="at-gallery-hover"></div>
-                                    <a href="#" class="all-link">
-                                        <img src="https://demo.acmethemes.com/portfolio-web/wp-content/uploads/2019/01/pexels-photo-1037992-1024x683.jpeg" alt="Mockup Design" title="Mockup Design"/>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="at-gallery-item  col-sm-3 col-md-3">
-                                <div class="gallery-inner-item init-animate zoomIn">
-                                    <div class="at-bottom-lower">
-                                        <h3>
-                                            <a href="#" class="all-link">Project Frame</a>
-                                        </h3>
-                                        <a class="image-gallery-widget" href="https://demo.acmethemes.com/portfolio-web/wp-content/uploads/2019/01/pexels-photo-1157803.jpeg">
-                                            <i class="fa fa-search gallery-button primary-bg"></i>
-                                        </a>
-                                    </div>
-                                    <div class="at-gallery-hover"></div>
-                                    <a href="#" class="all-link">
-                                        <img src="https://demo.acmethemes.com/portfolio-web/wp-content/uploads/2019/01/pexels-photo-1157803.jpeg" alt="Project Frame" title="Project Frame"/>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="at-gallery-item  col-sm-3 col-md-3">
-                                <div class="gallery-inner-item init-animate zoomIn">
-                                    <div class="at-bottom-lower">
-                                        <h3>
-                                            <a href="#" class="all-link">Product Photoshoot</a>
-                                        </h3>
-                                        <a class="image-gallery-widget" href="https://demo.acmethemes.com/portfolio-web/wp-content/uploads/2019/01/pexels-photo-1037997.jpeg">
-                                            <i class="fa fa-search gallery-button primary-bg"></i>
-                                        </a>
-                                    </div>
-                                    <div class="at-gallery-hover"></div>
-                                    <a href="#" class="all-link">
-                                        <img src="https://demo.acmethemes.com/portfolio-web/wp-content/uploads/2019/01/pexels-photo-1037997.jpeg" alt="Product Photoshoot" title="Product Photoshoot"/>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="at-gallery-item  col-sm-3 col-md-3">
-                                <div class="gallery-inner-item init-animate zoomIn">
-                                    <div class="at-bottom-lower">
-                                        <h3>
-                                            <a href="#" class="all-link">Logo Design</a>
-                                        </h3>
-                                        <a class="image-gallery-widget" href=#">
-                                            <i class="fa fa-search gallery-button primary-bg"></i>
-                                        </a>
-                                    </div>
-                                    <div class="at-gallery-hover"></div>
-                                    <a href="#" class="all-link">
-                                        <img src="https://demo.acmethemes.com/portfolio-web/wp-content/uploads/2019/01/icon-1379249_1920-1024x1024.png" alt="Logo Design" title="Logo Design"/>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="at-gallery-item  col-sm-3 col-md-3">
-                                <div class="gallery-inner-item init-animate zoomIn">
-                                    <div class="at-bottom-lower">
-                                        <h3>
-                                            <a href="#" class="all-link">Web Application</a>
-                                        </h3>
-                                        <a class="image-gallery-widget" href="https://demo.acmethemes.com/portfolio-web/wp-content/uploads/2019/01/computer-1149148_1920.jpg">
-                                            <i class="fa fa-search gallery-button primary-bg"></i>
-                                        </a>
-                                    </div>
-                                    <div class="at-gallery-hover"></div>
-                                    <a href="#" class="all-link">
-                                        <img src="https://demo.acmethemes.com/portfolio-web/wp-content/uploads/2019/01/computer-1149148_1920-1024x576.jpg" alt="Web Application" title="Web Application"/>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="at-gallery-item  col-sm-3 col-md-3">
-                                <div class="gallery-inner-item init-animate zoomIn">
-                                    <div class="at-bottom-lower">
-                                        <h3>
-                                            <a href="#" class="all-link">Awesome Website</a>
-                                        </h3>
-                                        <a class="image-gallery-widget" href="https://demo.acmethemes.com/portfolio-web/wp-content/uploads/2019/01/laptop-1209008.jpg">
-                                            <i class="fa fa-search gallery-button primary-bg"></i>
-                                        </a>
-                                    </div>
-                                    <div class="at-gallery-hover"></div>
-                                    <a href="#" class="all-link">
-                                        <img src="https://demo.acmethemes.com/portfolio-web/wp-content/uploads/2019/01/laptop-1209008-1024x576.jpg" alt="Awesome Website" title="Awesome Website"/>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="at-gallery-item  col-sm-3 col-md-3">
-                                <div class="gallery-inner-item init-animate zoomIn">
-                                    <div class="at-bottom-lower">
-                                        <h3>
-                                            <a href="#" class="all-link">Mobile App</a>
-                                        </h3>
-                                        <a class="image-gallery-widget" href="https://demo.acmethemes.com/portfolio-web/wp-content/uploads/2019/01/iphone-x-2864150_1920.jpg">
-                                            <i class="fa fa-search gallery-button primary-bg"></i>
-                                        </a>
-                                    </div>
-                                    <div class="at-gallery-hover"></div>
-                                    <a href="#" class="all-link">
-                                        <img src="https://demo.acmethemes.com/portfolio-web/wp-content/uploads/2019/01/iphone-x-2864150_1920-1024x1024.jpg" alt="Mobile App" title="Mobile App"/>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="at-gallery-item  col-sm-3 col-md-3">
-                                <div class="gallery-inner-item init-animate zoomIn">
-                                    <div class="at-bottom-lower">
-                                        <h3>
-                                            <a href="#" class="all-link">Papper Glass</a>
-                                        </h3>
-                                        <a class="image-gallery-widget" href="https://demo.acmethemes.com/portfolio-web/wp-content/uploads/2019/01/pexels-photo-1516654.jpeg">
-                                            <i class="fa fa-search gallery-button primary-bg"></i>
-                                        </a>
-                                    </div>
-                                    <div class="at-gallery-hover"></div>
-                                    <a href="#" class="all-link">
-                                        <img src="https://demo.acmethemes.com/portfolio-web/wp-content/uploads/2019/01/pexels-photo-1516654-1024x683.jpeg" alt="Papper Glass" title="Papper Glass"/>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="at-gallery-item  col-sm-3 col-md-3">
-                                <div class="gallery-inner-item init-animate zoomIn">
-                                    <div class="at-bottom-lower">
-                                        <h3>
-                                            <a href="#" class="all-link">Product Design</a>
-                                        </h3>
-                                        <a class="image-gallery-widget" href="https://demo.acmethemes.com/portfolio-web/wp-content/uploads/2019/01/pexels-photo-1037992.jpeg">
-                                            <i class="fa fa-search gallery-button primary-bg"></i>
-                                        </a>
-                                    </div>
-                                    <div class="at-gallery-hover"></div>
-                                    <a href="#" class="all-link">
-                                        <img src="https://demo.acmethemes.com/portfolio-web/wp-content/uploads/2019/01/pexels-photo-1037992-1024x683.jpeg" alt="Product Design" title="Product Design"/>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="at-gallery-item  col-sm-3 col-md-3">
-                                <div class="gallery-inner-item init-animate zoomIn">
-                                    <div class="at-bottom-lower">
-                                        <h3>
-                                            <a href="#" class="all-link">Label Design</a>
-                                        </h3>
-                                        <a class="image-gallery-widget" href="https://demo.acmethemes.com/portfolio-web/wp-content/uploads/2019/01/pexels-photo-1493322.jpeg">
-                                            <i class="fa fa-search gallery-button primary-bg"></i>
-                                        </a>
-                                    </div>
-                                    <div class="at-gallery-hover"></div>
-                                    <a href="#" class="all-link">
-                                        <img src="https://demo.acmethemes.com/portfolio-web/wp-content/uploads/2019/01/pexels-photo-1493322.jpeg" alt="Label Design" title="Label Design"/>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <!--row-->
-                    </div>
-                </section>
-            </aside>
-            <aside id="portfolio_web_feature-3" class="widget widget_portfolio_web_feature">
-                <section id="portfolio_web_feature-3" class="at-widgets primary-bg at-parallax " style="background-image:url(https://demo.acmethemes.com/portfolio-web/wp-content/uploads/2019/01/laptop-1209008.jpg);background-repeat:no-repeat;background-size:cover;background-attachment:fixed;background-position: center;">
-                    <div class="container">
-                        <div class='at-widget-title-wrapper init-animate zoomIn'>
-                            <h2 class="widget-title init-animate zoomIn">
-                                <span>Create And Develop Unique Design</span>
-                            </h2>
-                            <p class="at-subtitle">I focus on crafting custom, innovative designs that stand out, ensuring each project is tailored to meet the unique needs of clients and deliver a memorable user experience.</p>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 at-btn-wrap init-animate zoomIn">
-                                
-                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ndikowilson99@gmail.com"  class="init-animate zoomIn btn btn-primary btn-reverse outline-outward banner-btn">
-                                Hire Me Now <i class="fa fa-angle-double-right"></i>
-                            </a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </aside>
-            <aside id="portfolio_web_posts_col-3" class="widget widget_portfolio_web_posts_col">
-                <section id="portfolio_web_posts_col-3" class="at-widgets acme-col-posts ">
-                    <div class="container">
-                        <div class='at-widget-title-wrapper init-animate zoomIn'>
-                            <div class='at-cat-color-wrap-1'>
-                                <h2 class="widget-title init-animate zoomIn">
-                                    <span>Blog</span>
-                                </h2>
-                            </div>
-                        </div>
-                        <div class="featured-entries-col">
-                            <div class="single-list col-sm-3 col-md-3">
-                                <article id="post-111" class="init-animate zoomIn post-111 post type-post status-publish format-standard has-post-thumbnail hentry category-web-development">
-                                    <div class="content-wrapper">
-                                        <div class="image-wrap">
-                                            <!--post thumbnail options-->
-                                            <div class="post-thumb">
-                                                <a href="#" class="all-link">
-                                                    <img width="640" height="360" src="webdev1.jpg" class="attachment-large size-large wp-post-image" alt="" decoding="async" srcset="webdev1.jpg" sizes="(max-width: 640px) 100vw, 640px"/>
-                                                </a>
-                                            </div>
-                                            <!-- .post-thumb-->
-                                        </div>
-                                        <div class="entry-content ">
-                                            <div class="entry-header-title">
-                                                <header class="entry-header">
-                                                    <div class="entry-meta">
-                                                        <i class="fa fa-tag" aria-hidden="true"></i>
-                                                        <span class="cat-links">
-                                                            <a href="#" rel="category tag">Web Development</a>
-                                                        </span>
-                                                    </div>
-                                                    <!-- .entry-meta -->
-                                                </header>
-                                                <!-- .entry-header -->
-                                                <h3 class="entry-title">
-                                                    <a href="https://demo.acmethemes.com/portfolio-web/blog/2019/01/06/what-is-the-best-web/" class="all-link">Why UI/UX Matters</a>
-                                                </h3>
-                                            </div>
-                                            <div class="details">🚀 Good design isn’t just about looks—it’s about usability! Learn how UI/UX impacts user engagement and conversions.............                                                </div>
-                                            <div class="date">
-                                                <a href="#">
-                                                    <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
-                                                    <span class="day-month">
-                                                        <span class="day">26                                                            </span>
-                                                    </span>
-                                                    <span class="month">January,                                                        </span>
-                                                    <span class="year">2025                                                        </span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <!-- .entry-content -->
-                                    </div>
-                                </article>
-                                <!-- #post-## -->
-                            </div>
-                            <!--dynamic css-->
-                            <div class="single-list col-sm-3 col-md-3">
-                                <article id="post-109" class="init-animate zoomIn post-109 post type-post status-publish format-standard has-post-thumbnail hentry category-coding">
-                                    <div class="content-wrapper">
-                                        <div class="image-wrap">
-                                            <!--post thumbnail options-->
-                                            <div class="post-thumb">
-                                                <a href="#" class="all-link">
-                                                    <img width="640" height="360" src="ai1.jpg" class="attachment-large size-large wp-post-image" alt="" decoding="async" srcset="ai1.jpg" sizes="(max-width: 640px) 100vw, 640px"/>
-                                                </a>
-                                            </div>
-                                            <!-- .post-thumb-->
-                                        </div>
-                                        <div class="entry-content ">
-                                            <div class="entry-header-title">
-                                                <header class="entry-header">
-                                                    <div class="entry-meta">
-                                                        <i class="fa fa-tag" aria-hidden="true"></i>
-                                                        <span class="cat-links">
-                                                            <a href="#"rel="category tag">AI</a>
-                                                        </span>
-                                                    </div>
-                                                    <!-- .entry-meta -->
-                                                </header>
-                                                <!-- .entry-header -->
-                                                <h3 class="entry-title">
-                                                    <a href="https://demo.acmethemes.com/portfolio-web/blog/2019/01/06/basic-of-ui-ux/" class="all-link">AI in Web Development</a>
-                                                </h3>
-                                            </div>
-                                            <div class="details">🤖 AI is transforming web development! From code generation to automated design, discover how AI is shaping the future of the web..............                                            </div>
-                                            <div class="date">
-                                                <a href="#">
-                                                    <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
-                                                    <span class="day-month">
-                                                        <span class="day">29                                                            </span>
-                                                    </span>
-                                                    <span class="month">January,                                                        </span>
-                                                    <span class="year">2025                                                        </span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <!-- .entry-content -->
-                                    </div>
-                                </article>
-                                <!-- #post-## -->
-                            </div>
-                            <!--dynamic css-->
-                            <div class="single-list col-sm-3 col-md-3">
-                                <article id="post-107" class="init-animate zoomIn post-107 post type-post status-publish format-standard has-post-thumbnail hentry category-web-development">
-                                    <div class="content-wrapper">
-                                        <div class="image-wrap">
-                                            <!--post thumbnail options-->
-                                            <div class="post-thumb">
-                                                <a href="#" class="all-link">
-                                                    <img width="640" height="360" src="cybersecurity.jpg" class="attachment-large size-large wp-post-image" alt="" decoding="async" srcset="cybersecurity.jpg" sizes="(max-width: 640px) 100vw, 640px"/>
-                                                </a>
-                                            </div>
-                                            <!-- .post-thumb-->
-                                        </div>
-                                        <div class="entry-content ">
-                                            <div class="entry-header-title">
-                                                <header class="entry-header">
-                                                    <div class="entry-meta">
-                                                        <i class="fa fa-tag" aria-hidden="true"></i>
-                                                        <span class="cat-links">
-                                                            <a href="#" rel="category tag">Cyber Security</a>
-                                                        </span>
-                                                    </div>
-                                                    <!-- .entry-meta -->
-                                                </header>
-                                                <!-- .entry-header -->
-                                                <h3 class="entry-title">
-                                                    <a href="https://demo.acmethemes.com/portfolio-web/blog/2019/01/06/design-cheatsheet-2018/" class="all-link">Tips for Developers</a>
-                                                </h3>
-                                            </div>
-                                            <div class="details">🔒 Security matters!  Learn essential tips to protect websites from threats like SQL injection, XSS, and data breaches. This will help you stay safe......                                              </div>
-                                            <div class="date">
-                                                <a href="#">
-                                                    <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
-                                                    <span class="day-month">
-                                                        <span class="day">28                                                            </span>
-                                                    </span>
-                                                    <span class="month">January,                                                        </span>
-                                                    <span class="year">2025                                                        </span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <!-- .entry-content -->
-                                    </div>
-                                </article>
-                                <!-- #post-## -->
-                            </div>
-                            <!--dynamic css-->
-                            <div class="single-list col-sm-3 col-md-3">
-                                <article id="post-105" class="init-animate zoomIn post-105 post type-post status-publish format-standard has-post-thumbnail hentry category-web-design">
-                                    <div class="content-wrapper">
-                                        <div class="image-wrap">
-                                            <!--post thumbnail options-->
-                                            <div class="post-thumb">
-                                                <a href="#" class="all-link">
-                                                    <img width="640" height="360" src="cloud1.jpg" class="attachment-large size-large wp-post-image" alt="" decoding="async" srcset="cloud1.jpg" sizes="(max-width: 640px) 100vw, 640px"/>
-                                                </a>
-                                            </div>
-                                            <!-- .post-thumb-->
-                                        </div>
-                                        <div class="entry-content ">
-                                            <div class="entry-header-title">
-                                                <header class="entry-header">
-                                                    <div class="entry-meta">
-                                                        <i class="fa fa-tag" aria-hidden="true"></i>
-                                                        <span class="cat-links">
-                                                            <a href="#" rel="category tag">Cloud Computing</a>
-                                                        </span>
-                                                    </div>
-                                                    <!-- .entry-meta -->
-                                                </header>
-                                                <!-- .entry-header -->
-                                                <h3 class="entry-title">
-                                                    <a href="https://demo.acmethemes.com/portfolio-web/blog/2019/01/06/workflow-generator/" class="all-link">Why Businesses Are Moving to the Cloud</a>
-                                                </h3>
-                                            </div>
-                                            <div class="details">☁️ Scalability, flexibility, and cost savings—see why companies are adopting cloud solutions like AWS, Azure, and Google Cloud recently....                                             </div>
-                                            <div class="date">
-                                                <a href="#">
-                                                    <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
-                                                    <span class="day-month">
-                                                        <span class="day">30                                                            </span>
-                                                    </span>
-                                                    <span class="month">January,                                                        </span>
-                                                    <span class="year">2025                                                        </span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <!-- .entry-content -->
-                                    </div>
-                                </article>
-                                <!-- #post-## -->
-                            </div>
-                            <!--dynamic css-->
-                        </div>
-                        <!--featured entries-col-->
-                    </div>
-                </section>
-            </aside>
-            <div class='clearfix'></div>
-          
-<aside id="portfolio_web_testimonial-3" class="widget widget_portfolio_web_testimonial">
-    <section id="portfolio_web_testimonial-3" class="at-widgets acme-testimonials at-parallax classic-testimonials" style="background-image:url(https://demo.acmethemes.com/portfolio-web/wp-content/uploads/2019/01/computer-1245714_1920.jpg);background-repeat:no-repeat;background-size:cover;background-attachment:fixed;background-position: center;">
-        <div class="container">
-            <div class='at-widget-title-wrapper init-animate zoomIn'>
-                <h2 class="widget-title init-animate zoomIn">
-                    <span>Testimonials</span>
-                </h2>
-            </div>
-            <div class="row featured-entries-col featured-entries-logo ">
-                <div class="single-list col-sm-4 col-md-4">
-                    <div class="testimonial-item init-animate zoomIn">
-                        <div class="testimonial-content">
-                            <div class="testimonial-author">
-                                <div class="testimonial-image">
-                                    <img width="150" height="150" src="paul.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async"/>
-                                </div>
-                                <h3 class="testimonial-author-name">
-                                    <a href="https://kungu-paul.github.io/" class="all-link">Paul Kung'u</a>
-                                    <span class="designation">CEO, Kenya E-commerce Movement.</span>
-                                </h3>
-                            </div>
-                            <div class="testimonial-details">
-                                <p>"Wilson Ndiko is a skilled and creative developer. Their attention to detail and user-friendly designs greatly improved our platform’s experience."</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="single-list col-sm-4 col-md-4">
-                    <div class="testimonial-item init-animate zoomIn">
-                        <div class="testimonial-content">
-                            <div class="testimonial-author">
-                                <div class="testimonial-image">
-                                    <img width="150" height="150" src="paul.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async"/>
-                                </div>
-                                <h3 class="testimonial-author-name">
-                                    <a href="#" class="all-link">Julius Mburu</a>
-                                    <span class="designation">UI/UX Designer, Global Web Devs.</span>
-                                </h3>
-                            </div>
-                            <div class="testimonial-details">
-                                <p>"Working with Wilson was an absolute pleasure. Their design skills and deep understanding of UI/UX principles helped create an engaging user experience."</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="single-list col-sm-4 col-md-4">
-                    <div class="testimonial-item init-animate zoomIn">
-                        <div class="testimonial-content">
-                            <div class="testimonial-author">
-                                <div class="testimonial-image">
-                                    <img width="150" height="150" src="paul.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async"/>
-                                </div>
-                                <h3 class="testimonial-author-name">
-                                    <a href="#" class="all-link">Nicole Imogen</a>
-                                    <span class="designation">Graphics Designer, FinTech Graphics.</span>
-                                </h3>
-                            </div>
-                            <div class="testimonial-details">
-                                <p>"I had the pleasure of collaborating with Wilson, and his creativity and design skills are top-notch. He delivered work that aligned perfectly with our brand's vision."</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--row-->
-        </div>
-    </section>
-</aside>
-<!-- ...existing code... -->
-        <aside id="portfolio_web_contact-3" class="widget widget_portfolio_web_contact">
-            <section id="portfolio_web_contact-3" class="at-widgets acme-contact">
-               
-                            <div class='at-widget-title-wrapper init-animate zoomIn'>
-                                <h2 class="widget-title init-animate zoomIn">
-                                    <span>Contact Me</span>
-                                </h2>
-                            </div>
-                            
-                           
-                            <div class='at-widget-title-wrapper init-animate zoomIn'>
-                                <div class="social-media-icons" style="font-size: 3em; display: flex; flex-wrap: wrap; justify-content: space-around;">
-                                    <a href="https://www.facebook.com/profile.php?id=100095372563553" target="_blank" style="color: #3b5998;">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                    <a href="https://twitter.com/wilson6nj100" target="_blank" style="color: #1da1f2;">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                    <a href="https://www.linkedin.com/in/winkotech-space-45aa17349?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" style="color: #0077b5;">
-                                        <i class="fab fa-linkedin-in"></i>
-                                    </a>
-                                    <a href="https://www.instagram.com/yourprofile" target="_blank" style="color: #e4405f;">
-                                        <i class="fab fa-instagram"></i>
-                                    </a>
-                                    <a href="https://www.youtube.com/@WinkoTechSpace" target="_blank" style="color: #ff0000;">
-                                        <i class="fab fa-youtube"></i>
-                                    </a>
-                                
-                                   
-                                    <a href="https://www.tiktok.com/@wilson.smith671" target="_blank" style="color: #000000;">
-                                        <i class="fab fa-tiktok"></i>
-                                    </a>
-                                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ndikowilson99@gmail.com" target="_blank" style="color: #db4437;">
-                                        <i class="fab fa-google"></i>
-                                    </a>
-                                    <a href="https://join.skype.com/invite/EeLoH1ernOqJ" target="_blank" style="color: #00aff0;">
-                                        <i class="fab fa-skype"></i>
-                                    </a>
-                                    
-                                </div>
-                            </div>
-                       
-                       
-            </section>
-        </aside>
-            
-            <div class="clearfix"></div>
-        </div>
-        <!-- #page -->
-        <footer class="site-footer" style=" ">
-            <div class="footer-columns at-fixed-width">
-                <div class="container">
-                    <div class="row">
-                        <div class="footer-sidebar col-sm-4 init-animate zoomIn">
-                            <aside id="custom_html-3" class="widget_text widget widget_custom_html">
-                                <h3 class="widget-title">
-                                    <span>Get in touch</span>
-                                </h3>
-                                <div class="textwidget custom-html-widget">
-                                    <div class="contact-info">
-                                        <ul>
-                                            <li>
-                                                <strong>Email Address</strong>
-                                               <span> <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ndikowilson99@gmail.com">ndikowilson99@gmail.com</a></span>
-                                            </li>
-                                            <li>
-                                                <strong>Phone Number</strong>
-                                                +254 701 922 784
-                                            </li>
-                                            <li>
-                                                <strong>Location</strong>
-                                                Nairobi, Kenya.
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </aside>
-                        </div>
-                        <div class="footer-sidebar col-sm-4 init-animate zoomIn">
-                            <aside id="portfolio_web_about-5" class="widget widget_portfolio_web_about">
-                                <section id="portfolio_web_about-5" class="at-widgets at-feature-about">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <div class='at-widget-title-wrapper init-animate zoomIn'>
-                                                    <h3 class="widget-title">
-                                                        <span>About Me</span>
-                                                    </h3>
-                                                    <p class="at-subtitle">"I am a passionate web and UI/UX designer focused on creating user-centric designs and seamless digital experiences. With a strong foundation in web development, I strive to deliver visually engaging and responsive solutions for all kinds of platforms." </p>
-                                                </div>
-                                                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ndikowilson99@gmail.com"  class="init-animate zoomIn btn btn-primary btn-reverse">Hire Me !!                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                            </aside>
-                        </div>
-                        <div class="footer-sidebar col-sm-4 init-animate zoomIn">
-                            <aside id="nav_menu-3" class="widget widget_nav_menu">
-                                <h3 class="widget-title">
-                                    <span>My Projects</span>
-                                </h3>
-                                <div class="menu-project-container">
-                                    <ul id="menu-project" class="menu">
-                                        <li id="menu-item-117" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-117">
-                                            <a href="#">Website Design</a>
-                                        </li>
-                                        <li id="menu-item-118" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-118">
-                                            <a href="#">E-commerce solutions</a>
-                                        </li>
-                                        <li id="menu-item-119" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-119">
-                                            <a href="#">App Development</a>
-                                        </li>
-                                        <li id="menu-item-120" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-120">
-                                            <a href="#">Graphics Design</a>
-                                        </li>
-                                        <li id="menu-item-121" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-121">
-                                            <a href="#">Brand Identity</a>
-                                        </li>
-                                        <li id="menu-item-122" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-122">
-                                            <a href="#">Web Hosting</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </aside>
-                        </div>
-                    </div>
-                </div>
-                <!-- bottom-->
-            </div>
-            <div class="clearfix"></div>
-            <div class="copy-right">
-                <div class='container'>
-                    <div class="row">
-                        <div class="col-sm-6 init-animate">
-                            <div class="footer-copyright text-left">
-                                <p class="at-display-inline-block">&copy;All right reserved                                    </p>
-                                <div class="site-info at-display-inline-block">
-                                 <a>WilsonNdiko</a>
-                                </div>
-                                <!-- .site-info -->
-                            </div>
-                        </div>
-                        <div class="col-sm-6 init-animate">
-                            <div class='at-first-level-nav text-right'>
-                                <ul id="menu-footer-menu" class="menu">
-                                    <li id="menu-item-124" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-124">
-                                        <a href="privacypolicy.html" target="_blank">Privacy Policy</a>
-                                    </li>
-                                    <li id="menu-item-125" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-125">
-                                        <a href="terms-and-conditions.html" target="_blank">Terms &#038;Conditions</a>
-                                    </li>
-                                    <li id="menu-item-126" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-126">
-                                        <a href="sitemap.html" target="_blank">Site Map</a>
-                                    </li>
-                                    <li id="menu-item-127" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-127">
-                                        <a href="support.html" target="_blank">Support</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a href="#page" class="sm-up-container">
-                    <i class="fa fa-angle-up sm-up"></i>
-                </a>
-            </div>
-        </footer>
-        <!-- Modal -->
-        <div id="at-shortcode-bootstrap-modal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Booking Table</h4>
-                    </div>
-                </div>
-                <!--.modal-content-->
-            </div>
-        </div>
-        <!--#at-shortcode-bootstrap-modal-->
-        <style type="text/css" media="all" id="siteorigin-panels-layouts-footer">
-            /* Layout 94 */
-            #pgc-94-0-0 {
-                width: 100%;
-                width: calc(100% - ( 0 * 30px ) )
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.style.backdropFilter = 'blur(10px)';
+            } else {
+                header.style.background = '#fff';
+                header.style.backdropFilter = 'none';
             }
-
-            #pl-94 .so-panel {
-                margin-bottom: 30px
-            }
-
-            #pl-94 .so-panel:last-of-type {
-                margin-bottom: 0px
-            }
-
-            @media (max-width: 780px) {
-                #pg-94-0.panel-no-style, #pg-94-0.panel-has-style > .panel-row-style, #pg-94-0 {
-                    -webkit-flex-direction:column;
-                    -ms-flex-direction: column;
-                    flex-direction: column
-                }
-
-                #pg-94-0 > .panel-grid-cell , #pg-94-0 > .panel-row-style > .panel-grid-cell {
-                    width: 100%;
-                    margin-right: 0
-                }
-
-                #pl-94 .panel-grid-cell {
-                    padding: 0
-                }
-
-                #pl-94 .panel-grid .panel-grid-cell-empty {
-                    display: none
-                }
-
-                #pl-94 .panel-grid .panel-grid-cell-mobile-last {
-                    margin-bottom: 0px
-                }
-            }
-        </style>
-        <link rel='stylesheet' id='siteorigin-panels-front-css' href='https://demo.acmethemes.com/portfolio-web/wp-content/plugins/siteorigin-panels/css/front-flex.min.css?ver=2.28.0' type='text/css' media='all'/>
-        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-        <script type="text/javascript" src="https://demo.acmethemes.com/portfolio-web/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.8.5" id="swv-js"></script>
-        <script type="text/javascript" id="contact-form-7-js-extra">
-            /* <![CDATA[ */
-            var wpcf7 = {
-                "api": {
-                    "root": "https:\/\/demo.acmethemes.com\/portfolio-web\/wp-json\/",
-                    "namespace": "contact-form-7\/v1"
-                }
-            };
-            /* ]]> */
-        </script>
-        <script type="text/javascript" src="https://demo.acmethemes.com/portfolio-web/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.8.5" id="contact-form-7-js"></script>
-        <script type="text/javascript" src="https://demo.acmethemes.com/portfolio-web/wp-content/themes/portfolio-web/assets/library/slick/slick.min.js?ver=1.1.2" id="slick-js"></script>
-        <script type="text/javascript" src="https://demo.acmethemes.com/portfolio-web/wp-content/themes/portfolio-web/acmethemes/core/js/skip-link-focus-fix.js?ver=20130115" id="portfolio-web-skip-link-focus-fix-js"></script>
-        <script type="text/javascript" src="https://demo.acmethemes.com/portfolio-web/wp-content/themes/portfolio-web/assets/library/bootstrap/js/bootstrap.min.js?ver=3.3.6" id="bootstrap-js"></script>
-        <script type="text/javascript" src="https://demo.acmethemes.com/portfolio-web/wp-content/themes/portfolio-web/assets/library/wow/js/wow.min.js?ver=1.1.2" id="wow-js"></script>
-        <script type="text/javascript" src="https://demo.acmethemes.com/portfolio-web/wp-content/themes/portfolio-web/assets/library/magnific-popup/jquery.magnific-popup.min.js?ver=1.1.0" id="magnific-popup-js"></script>
-        <script type="text/javascript" src="https://demo.acmethemes.com/portfolio-web/wp-content/themes/portfolio-web/assets/library/isotop/isotope.pkgd.js?ver=3.0.1" id="isotope-js"></script>
-        <script type="text/javascript" src="https://demo.acmethemes.com/portfolio-web/wp-includes/js/imagesloaded.min.js?ver=5.0.0" id="imagesloaded-js"></script>
-        <script type="text/javascript" src="https://demo.acmethemes.com/portfolio-web/wp-includes/js/masonry.min.js?ver=4.2.2" id="masonry-js"></script>
-        <script type="text/javascript" src="https://demo.acmethemes.com/portfolio-web/wp-content/themes/portfolio-web/assets/library/countUp/countUp.js?ver=1.0.0" id="countup-js"></script>
-        <script type="text/javascript" src="https://demo.acmethemes.com/portfolio-web/wp-content/themes/portfolio-web/assets/library/waypoints/jquery.waypoints.min.js?ver=1.0.0" id="waypoint-js"></script>
-        <script type="text/javascript" src="https://demo.acmethemes.com/portfolio-web/wp-content/themes/portfolio-web/assets/library/jquery-easypiechart/jquery.easypiechart.js?ver=1.0.0" id="easypiechart-js"></script>
-        <script type="text/javascript" id="portfolio-web-custom-js-extra">
-            /* <![CDATA[ */
-            var portfolio_web_ajax = {
-                "ajaxurl": "https:\/\/demo.acmethemes.com\/portfolio-web\/wp-admin\/admin-ajax.php"
-            };
-            /* ]]> */
-        </script>
-        <script type="text/javascript" src="https://demo.acmethemes.com/portfolio-web/wp-content/themes/portfolio-web/assets/js/portfolio-web-custom.js?ver=1.0.5" id="portfolio-web-custom-js"></script>
-    </body>
-</html>
+        });
+    </script>
+</body>
+    </html>
+    
